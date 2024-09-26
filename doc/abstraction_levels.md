@@ -42,6 +42,12 @@ The object property **jolux:isRealizedBy** points from a [jolux:Work](#Work) to 
 The object property **jolux:isEmbodiedBy** points from a [jolux:Expression](#Expression) to a [jolux:Manifestation](#Manifestation).
 :::
 
+:::{admonition} jolux:isExemplifiedBy
+:class: note
+:name: isExemplifiedBy
+The object property **jolux:isExemplifiedBy** points from a [jolux:Manifestation](#Manifestation) to an object that represent the URL of the actual document.
+:::
+
 The following figure shows the different abstraction levels and the object properties to connect them:
 
 :::{figure-md} abs_levels
