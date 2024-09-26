@@ -2,6 +2,8 @@
 
 This repository is used to document the JOLux ontology of the [Fedlex](https://www.fedlex.admin.ch/en) platform of the [Federal Chancellery](https://www.bk.admin.ch/bk/en/home.html).
 
+**The webpage of this repository is available at https://swiss.github.io/jolux**
+
 > [!CAUTION]
 > 2024-09-26: This is an ongoing project between the Federal Chancellery and the [Institute for Public Sector Transformation](https://www.bfh.ch/en/research/research-areas/public-sector-transformation/) of the [Bern University of Applied Sciences](https://www.bfh.ch/en/). The content is not yet stable. Further updates will follow.
 
