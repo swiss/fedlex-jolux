@@ -57,7 +57,7 @@ The connection between jolux:Consolidation and jolux:ConsolidationAbstract is ma
 :::{admonition} jolux:isMemberOf
 :class: note
 :name: isMemberOf
-The object property **jolux:isMemberOf** is used to connect a [jolux:Consolidation](#Consolidation) to a [jolux:ConsolidationAbstract](#ConsolidationAbstract)
+The object property **jolux:isMemberOf** is used to connect a [jolux:Consolidation](#Consolidation) to a [jolux:ConsolidationAbstract](#ConsolidationAbstract). It is also used to connect the weekly bulletins of the Official Compilation to the yearly collection.
 :::
 
 Each jolux:ConsolidationAbstract is based on an jolux:Act through jolux:basicAct.
