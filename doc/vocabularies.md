@@ -48,6 +48,26 @@ SELECT ?term ?label WHERE {
 }
 ```
 
+## Procedure Types
+
+- URI: https://fedlex.data.admin.ch/vocabulary/type-procedure
+- Description: The **procedure types** vocabulary is used to classify the type of a jolux:Act.
+- Predicates: jolux:processType
+- [Metadata viewer](https://fedlex.data.admin.ch/en-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Ftype-procedure)
+
+The following SPARQL query shows all the entries of this vocabulary with its labels:
+
+```sparql
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
+SELECT ?term ?label WHERE {
+    ?term skos:inScheme <https://fedlex.data.admin.ch/vocabulary/type-procedure>;
+        skos:prefLabel ?label.
+    FILTER NOT EXISTS {?term a skos:Collection}
+    FILTER (lang(?label) = "en")
+}
+```
+
 ## Subdivision Types
 
 - URI: https://fedlex.data.admin.ch/vocabulary/subdivision-type
