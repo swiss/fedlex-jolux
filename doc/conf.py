@@ -19,9 +19,10 @@ extensions = ['myst_parser',
               'sphinxcontrib.mermaid']
 
 templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
-#myst_fence_as_directive = ["mermaid"]
+exclude_patterns = ['_build', 
+                    'Thumbs.db', 
+                    '.DS_Store']
 
 myst_enable_extensions = ["deflist", 
                           "attrs_block",
@@ -32,11 +33,10 @@ myst_enable_extensions = ["deflist",
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-#html_theme = 'sphinx_rtd_theme'
 html_theme = 'sphinx_book_theme'
 
 html_theme_options = {
-    "repository_url": "https://github.com/bequrios/jolux-sphinx",
+    "repository_url": "https://github.com/swiss/jolux",
     "path_to_docs": "doc",
     "use_repository_button": True,
     "use_source_button": True,
@@ -46,7 +46,7 @@ html_theme_options = {
         "text": "JOLux Ontology",
         "image_light": "img/logo-ch.svg",
         "image_dark": "img/logo-ch.svg",
-        "link": "https://www.bk.admin.ch/bk/en/home.html"
+        "link": "https://swiss.github.io/jolux"
     },
     "navigation_depth": 2
 }
