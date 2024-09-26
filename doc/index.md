@@ -5,8 +5,8 @@
 
 Introduction <self>
 abstraction_levels.md
-dates.md
 vocabularies.md
+dates.md
 official_compilation.md
 classified_compilation.md
 impacts.md
