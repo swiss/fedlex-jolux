@@ -48,6 +48,39 @@ The following figure shows the general structure of an entry in the OC:
 General structure of an entry in the Official Compilation (CC).
 :::
 
+As the jolux:Act is a very abstract representation of a law text, there is e.g. no title of the law attached to the jolux:Act because this is something language specific and therefore added to the [jolux:Expression](#Expression) of the jolux:Act.
+
+As the Official Compilation is released in a weekly bulletin, all jolux:Act are part of such a bulletin via [jolux:isPartOf](#isPartOf):
+
+:::{admonition} jolux:isPartOf
+:class: note
+:name: isPartOf
+The object property **jolux:isPartOf** is used to connect a [jolux:Act](#Act) to the weekly bulletin that it is part of.
+:::
+
+## Datatype Properties
+
+- [jolux:publicationDate](#publicationDate)
+- [jolux:dateEntryInForce](#dateEntryInForce)
+- [jolux:dateDocument](#dateDocument)
+
+## Object Properties
+
+Object properties that point to a vocabulary entry:
+
+- [jolux:processType](vocabularies.md#procedure-types)
+- [jolux:typeDocument](vocabularies.md#text-types)
+- jolux:classifiedByTaxonomyEntry
+- [jolux:legalRessourceGenre](vocabularies.md#act-types)
+- jolux:responsibilityOf
+
+Object properties that point to an individual:
+
+- [jolux:isRealizedBy](#isRealizedBy)
+- [jolux:isPartOf](#isPartOf)
+
+## SPARQL Examples
+
 The following SPARQL query shows all the different jolux:Expression for the federal constitution:
 
 ```sparql
@@ -66,31 +99,6 @@ SELECT ?manifestation WHERE {
     ?expression jolux:isEmbodiedBy ?manifestation.
 }
 ```
-
-As the jolux:Act is a very abstract representation of a law text, there is e.g. no title of the law attached to the jolux:Act because this is something language specific and therefore added to the [jolux:Expression](#Expression) of the jolux:Act.
-
-## Datatype Properties
-
-- [jolux:publicationDate](#publicationDate)
-- [jolux:dateEntryInForce](#dateEntryInForce)
-- [jolux:dateDocument](#dateDocument)
-
-## Object Properties
-
-Object properties that point to a vocabulary entry:
-
-- jolux:processType
-- [jolux:typeDocument](vocabularies.md#text-types)
-- jolux:classifiedByTaxonomyEntry
-- [jolux:legalRessourceGenre](vocabularies.md#act-types)
-- jolux:responsibilityOf
-
-Object properties that point to an individual:
-
-- [jolux:isRealizedBy](#isRealizedBy)
-- jolux:isPartOf
-
-## SPARQL Examples
 
 The following SPARQL query shows all the different jolux:Act that have the legal genre "Basic legislation" and are not yet in force.
 
