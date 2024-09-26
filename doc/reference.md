@@ -18,28 +18,32 @@ Dates:
 - [dateApplicability](#dateApplicability)
 - [dateDocument](#dateDocument)
 - [dateEntryInForce](#dateEntryInForce)
+- [legalResourceImpactHasDateEntryInForce](#legalResourceImpactHasDateEntryInForce)
 - [publicationDate](#publicationDate)
 
 ## JOLux Object Properties
 
 Link to vocabulary entries:
 
-- classifiedByTaxonomyEntry
-- inForceStatus
-- [legalRessourceGenre](vocabularies.md#type-of-the-act)
+- [legalRessourceGenre](vocabularies.md#act-types)
+- [legalResourceImpactHasType](vocabularies.md#impact-types)
+- [legalResourceSubdivisionType](vocabularies.md#subdivision-types)
 - [typeDocument](vocabularies.md#text-types)
 
 Link to individuals:
 
 - [basicAct](#basicAct)
 - [isEmbodiedBy](#isEmbodiedBy)
+- [isExemplifiedBy](#isExemplifiedBy)
 - [isMemberOf](#isMemberOf)
 - [isRealizedBy](#isRealizedBy)
 
 ## Concepts
 
+- [Abstraction Levels](abstraction_levels.md)
 - [Classified Compilation (CC)](classified_compilation.md)
 - [Dates](dates.md)
 - [Impacts](impacts.md)
 - [Official Compilation (OC)](official_compilation.md)
+- [Subdivisions](subdivisions.md)
 - [Vocabularies](vocabularies.md)
