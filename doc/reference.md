@@ -28,6 +28,7 @@ Link to vocabulary entries:
 - [legalRessourceGenre](vocabularies.md#act-types)
 - [legalResourceImpactHasType](vocabularies.md#impact-types)
 - [legalResourceSubdivisionType](vocabularies.md#subdivision-types)
+- [processType](vocabularies.md#procedure-types)
 - [typeDocument](vocabularies.md#text-types)
 
 Link to individuals:
@@ -36,6 +37,7 @@ Link to individuals:
 - [isEmbodiedBy](#isEmbodiedBy)
 - [isExemplifiedBy](#isExemplifiedBy)
 - [isMemberOf](#isMemberOf)
+- [isPartOf](#isPartOf)
 - [isRealizedBy](#isRealizedBy)
 
 ## Concepts
