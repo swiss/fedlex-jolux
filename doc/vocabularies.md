@@ -170,6 +170,27 @@ SELECT ?term ?label WHERE {
 }
 ```
 
+As this is a hierarchical vocabulary, the following SPARQL query shows the hierarchy of the entries:
+
+```sparql
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT (GROUP_CONCAT(CONCAT(STR(?endpoint_level), ": ", STR(?endpoint_label)); separator = " <---- ") AS ?hierarchy) WHERE {
+    SELECT * WHERE {
+        ?endpoint skos:narrower* ?intermediate;
+            skos:prefLabel ?endpoint_label.
+        FILTER(lang(?endpoint_label) = "de")
+        {
+            SELECT ?endpoint (COUNT(?endpoint) as ?endpoint_level) WHERE {
+                BIND (<https://fedlex.data.admin.ch/vocabulary/consultation-stage> as ?root)
+                ?root skos:hasTopConcept/skos:narrower* ?intermediate.
+                ?intermediate skos:narrower* ?endpoint.
+            } GROUP BY ?endpoint ORDER BY ?endpoint_level
+        }
+    } ORDER BY ?intermediate ?endpoint_level
+} GROUP BY ?intermediate ORDER BY ?hierarchy
+```
+
 ## Text Types
 
 - URI: https://fedlex.data.admin.ch/vocabulary/resource-type
@@ -188,4 +209,25 @@ SELECT ?term ?label WHERE {
     FILTER NOT EXISTS {?term a skos:Collection}
     FILTER (lang(?label) = "en")
 }
+```
+
+As this is a hierarchical vocabulary, the following SPARQL query shows the hierarchy of the entries:
+
+```sparql
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT (GROUP_CONCAT(CONCAT(STR(?endpoint_level), ": ", STR(?endpoint_label)); separator = " <---- ") AS ?hierarchy) WHERE {
+    SELECT * WHERE {
+        ?endpoint skos:narrower* ?intermediate;
+            skos:prefLabel ?endpoint_label.
+        FILTER(lang(?endpoint_label) = "de")
+        {
+            SELECT ?endpoint (COUNT(?endpoint) as ?endpoint_level) WHERE {
+                BIND (<https://fedlex.data.admin.ch/vocabulary/resource-type> as ?root)
+                ?root skos:hasTopConcept/skos:narrower* ?intermediate.
+                ?intermediate skos:narrower* ?endpoint.
+            } GROUP BY ?endpoint ORDER BY ?endpoint_level
+        }
+    } ORDER BY ?intermediate ?endpoint_level
+} GROUP BY ?intermediate ORDER BY ?hierarchy
 ```
