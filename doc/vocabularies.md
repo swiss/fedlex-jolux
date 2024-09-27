@@ -4,7 +4,7 @@ In RDF, a vocabulary is a **set of predefined terms**, that is used to describe 
 
 Fedlex defines and makes use of multiple vocabularies. This sub-page lists an overview and the main vocabularies and its associated properties that are used in describing the legal resources.
 
-## All Available Vocabularies
+## Available Vocabularies
 
 As all vocabularies are modelled as having the class [skos:ConceptScheme](https://www.w3.org/TR/skos-reference/#schemes), the metadata viewer can give all the vocabularies as incoming relations to skos:ConceptScheme and therefore serves as an [overview on all available vocabularies](https://fedlex.data.admin.ch/de-CH/metadata?value=http:%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23ConceptScheme).
 
@@ -57,6 +57,36 @@ SELECT DISTINCT ?vocabulary ?name_en ?name_de ?name_fr WHERE {
   BIND(COALESCE(?title_en, ?label_en) AS ?name_en)
   BIND(COALESCE(?title_de, ?label_de) AS ?name_de)
   BIND(COALESCE(?title_fr, ?label_fr) AS ?name_fr)
+}
+```
+
+## Hierarchical Vocabularies
+
+Some vocabularies are modelled as hierarchy or taxonomy of entries. The following SPARQL query lists all vocabularies that use a hierarchy:
+
+```sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX purl: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?vocabulary ?name_en WHERE {
+    ?vocabulary a skos:ConceptScheme;
+                skos:hasTopConcept ?top_concept.
+  ?top_concept skos:narrower ?narrow.
+  
+  # English title
+  OPTIONAL {
+    ?vocabulary purl:title ?title_en .
+    FILTER(LANG(?title_en) = "en")
+  }
+  
+  # English label
+  OPTIONAL {
+    ?vocabulary rdfs:label ?label_en .
+    FILTER(LANG(?label_en) = "en")
+  }
+  
+  # Use ?title if available and otherwise ?label
+  BIND(COALESCE(?title_en, ?label_en) AS ?name_en)
 }
 ```
 
