@@ -52,6 +52,21 @@ Graphical representation of JOLux ontology elements.
 
 The figure above can be read as: Some object of type [jolux:Act](#Act) is connected to an object of type [jolux:Expression](#Expression) via predicate [jolux:isRealizedBy](#isRealizedBy). So the single bubbles do not represent concrete objects but signal class memberships.
 
+## SPARQL Queries
+
+Throughout this webpage, there are examples of SPARQL queries given. The idea is, that these are real queries that can be executed on the [Fedlex SPARQL GUI](https://fedlex.data.admin.ch/en-CH/sparql) to get real up to date results. To do so, below every SPARQL example query, there is a "Execute Query" button that transfers the corresponding query into the SPARQL GUI and executes it to show the tabular result. As the source code of these queries is also given, the user should be encouraged to modify these queries directly in the SPARQL GUI or use it programmatically to their own needs.
+
+The following SPARQL query shows this method by giving the 10 newest published [jolux:Act](#Act) that are available:
+
+```sparql
+PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
+SELECT * WHERE {
+    ?act a jolux:Act;
+         jolux:publicationDate ?date.
+} ORDER BY DESC(?date)
+LIMIT 10
+```
+
 ## Fedlex URI and URL
 
 All URI of Fedlex raw data resources start with: `https://fedlex.data.admin.ch/eli` whereas `eli` is an abbreviation for [European Legislation Identifier](https://eur-lex.europa.eu/content/help/eurlex-content/eli.html).
