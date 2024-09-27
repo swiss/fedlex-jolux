@@ -8,6 +8,58 @@ Fedlex defines and makes use of multiple vocabularies. This sub-page lists an ov
 
 As all vocabularies are modelled as having the class [skos:ConceptScheme](https://www.w3.org/TR/skos-reference/#schemes), the metadata viewer can give all the vocabularies as incoming relations to skos:ConceptScheme and therefore serves as an [overview on all available vocabularies](https://fedlex.data.admin.ch/de-CH/metadata?value=http:%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23ConceptScheme).
 
+In addition, the following SPARQL query shows all vocabularies with its name in English, German and French. The name is either `purl:title` where available and otherwise `rdfs:label` or empty if there is neither:
+
+```sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX purl: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?vocabulary ?name_en ?name_de ?name_fr WHERE {
+    ?vocabulary a skos:ConceptScheme.
+  
+  # English title
+  OPTIONAL {
+    ?vocabulary purl:title ?title_en .
+    FILTER(LANG(?title_en) = "en")
+  }
+  
+  # German title
+  OPTIONAL {
+    ?vocabulary purl:title ?title_de .
+    FILTER(LANG(?title_de) = "de")
+  }
+  
+  # French title
+  OPTIONAL {
+    ?vocabulary purl:title ?title_fr .
+    FILTER(LANG(?title_fr) = "fr")
+  }
+  
+  # English label
+  OPTIONAL {
+    ?vocabulary rdfs:label ?label_en .
+    FILTER(LANG(?label_en) = "en")
+  }
+  
+  # German label
+  OPTIONAL {
+    ?vocabulary rdfs:label ?label_de .
+    FILTER(LANG(?label_de) = "de")
+  }
+  
+  # French label
+  OPTIONAL {
+    ?vocabulary rdfs:label ?label_fr .
+    FILTER(LANG(?label_fr) = "fr")
+  }
+  
+  # Use ?title if available and otherwise ?label
+  BIND(COALESCE(?title_en, ?label_en) AS ?name_en)
+  BIND(COALESCE(?title_de, ?label_de) AS ?name_de)
+  BIND(COALESCE(?title_fr, ?label_fr) AS ?name_fr)
+}
+```
+
 ## Act Types
 
 - URI: https://fedlex.data.admin.ch/vocabulary/legal-resource-genre
