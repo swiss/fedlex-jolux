@@ -1,6 +1,6 @@
 # Abstraction Levels
 
-In JOLux, all the different legislative resources are usually described through **three different levels of abstraction**.
+In JOLux, all the different legislative resources are usually described through **three different levels of abstraction**. These levels are necessary to be able to reference legislative resources either depending on language and file format or not.
 
 ## Work, Expression and Manifestation
 
