@@ -55,3 +55,18 @@ The following figure shows the different abstraction levels and the object prope
 
 Relation between jolux:Work, jolux:Expression und jolux:Manifestation.
 :::
+
+## SPARQL Example
+
+The following question uses the above introduced abstraction levels to drill down from the URI of the Federal Constitution in the [Official Compilation](official_compilation.md) to the link of the PDF document in German:
+
+```sparql
+PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
+SELECT * WHERE {
+    <https://fedlex.data.admin.ch/eli/oc/1999/404> jolux:isRealizedBy ?expression.
+    ?expression jolux:language <http://publications.europa.eu/resource/authority/language/DEU>;
+        jolux:isEmbodiedBy ?manifestation.
+    ?manifestation jolux:format <http://publications.europa.eu/resource/authority/file-type/PDF>;
+        jolux:isExemplifiedBy ?url.
+}
+```
