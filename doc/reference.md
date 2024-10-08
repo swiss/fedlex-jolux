@@ -5,6 +5,7 @@
 - [Act](#Act)
 - [Consolidation](#Consolidation)
 - [ConsolidationAbstract](#ConsolidationAbstract)
+- [Draft](#Draft)
 - [Expression](#Expression)
 - [LegalResourceImpact](#LegalResourceImpact)
 - [LegalResourceSubdivision](#LegalResourceSubdivision)
@@ -18,6 +19,7 @@ Dates:
 - [dateApplicability](#dateApplicability)
 - [dateDocument](#dateDocument)
 - [dateEntryInForce](#dateEntryInForce)
+- [impactToLegalResourceComment](#impactToLegalResourceComment)
 - [legalResourceImpactHasDateEntryInForce](#legalResourceImpactHasDateEntryInForce)
 - [publicationDate](#publicationDate)
 
@@ -34,6 +36,8 @@ Link to vocabulary entries:
 Link to individuals:
 
 - [basicAct](#basicAct)
+- [impactFromLegalResource](#impactFromLegalResource)
+- [impactToLegalResource](#impactToLegalResource)
 - [isEmbodiedBy](#isEmbodiedBy)
 - [isExemplifiedBy](#isExemplifiedBy)
 - [isMemberOf](#isMemberOf)
@@ -43,6 +47,8 @@ Link to individuals:
 ## Concepts
 
 - [Abstraction Levels](abstraction_levels.md)
+- [Changes](changes.md)
+- [Chronology](chronology.md)
 - [Classified Compilation (CC)](classified_compilation.md)
 - [Dates](dates.md)
 - [Impacts](impacts.md)
