@@ -12,6 +12,7 @@ classified_compilation.md
 impacts.md
 subdivisions.md
 chronology.md
+changes.md
 reference.md
 :::
 
