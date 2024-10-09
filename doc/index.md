@@ -13,6 +13,7 @@ impacts.md
 subdivisions.md
 chronology.md
 changes.md
+citations.md
 reference.md
 :::
 
@@ -98,3 +99,4 @@ The following namespaces are used throughout this documentation:
 | rdfs | http://www.w3.org/2000/01/rdf-schema# |
 | rdf | http://www.w3.org/1999/02/22-rdf-syntax-ns# |
 | owl | http://www.w3.org/2002/07/owl# |
+| eu | http://publications.europa.eu/resource/authority/ |
