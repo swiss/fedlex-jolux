@@ -5,8 +5,6 @@
 
 Introduction <self>
 abstraction_levels.md
-vocabularies.md
-dates.md
 official_compilation.md
 classified_compilation.md
 impacts.md
@@ -14,6 +12,8 @@ subdivisions.md
 chronology.md
 changes.md
 citations.md
+vocabularies.md
+dates.md
 reference.md
 :::
 
