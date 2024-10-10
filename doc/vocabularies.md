@@ -150,6 +150,47 @@ SELECT ?term ?label WHERE {
 }
 ```
 
+## Legal Institution
+
+- URI: https://fedlex.data.admin.ch/vocabulary/legal-institution
+- Description: The **legal institution** vocabulary is used to add the responsibility of an institution for [jolux:Act](#Act).
+- Predicates: jolux:responsibilityOf
+- [Metadata viewer](https://fedlex.data.admin.ch/en-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Flegal-institution)
+
+The following SPARQL query shows all the entries of this vocabulary with its labels:
+
+```sparql
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
+SELECT ?term ?label WHERE {
+    ?term skos:inScheme <https://fedlex.data.admin.ch/vocabulary/legal-institution>;
+        skos:prefLabel ?label.
+    FILTER NOT EXISTS {?term a skos:Collection}
+    FILTER (lang(?label) = "en")
+}
+```
+
+As this is a hierarchical vocabulary, the following SPARQL query shows the hierarchy of the entries:
+
+```sparql
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT (GROUP_CONCAT(CONCAT(STR(?endpoint_level), ": ", STR(?endpoint_label)); separator = " <---- ") AS ?hierarchy) WHERE {
+    SELECT * WHERE {
+        ?endpoint skos:narrower* ?intermediate;
+            skos:prefLabel ?endpoint_label.
+        FILTER(lang(?endpoint_label) = "de")
+        {
+            SELECT ?endpoint (COUNT(?endpoint) as ?endpoint_level) WHERE {
+                BIND (<https://fedlex.data.admin.ch/vocabulary/legal-institution> as ?root)
+                ?root skos:hasTopConcept/skos:narrower* ?intermediate.
+                ?intermediate skos:narrower* ?endpoint.
+            } GROUP BY ?endpoint ORDER BY ?endpoint_level
+        }
+    } ORDER BY ?intermediate ?endpoint_level
+} GROUP BY ?intermediate ORDER BY ?hierarchy
+```
+
 ## Legal Taxonomy
 
 - URI: https://fedlex.data.admin.ch/vocabulary/legal-taxonomy
