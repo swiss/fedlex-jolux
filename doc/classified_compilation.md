@@ -2,6 +2,8 @@
 
 The *classified compilation (CC)* (also known as systematic compilation) is according to the [lexicon of parliamentary terms](https://www.parlament.ch/en/%C3%BCber-das-parlament/parlamentsw%C3%B6rterbuch/parlamentsw%C3%B6rterbuch-detail?WordId=216) a regularly updated and revised collection of the law texts of the official compilation arranged under subject headings.
 
+An important aspect of the Classified Compilation is the classification of the entries according to a legal taxonomy. A deeper explanation of the Classified Compilation is also available in [German](https://www.fedlex.admin.ch/de/cc/explanations-cc)/[French](https://www.fedlex.admin.ch/fr/cc/explanations-cc)/[Italian](https://www.fedlex.admin.ch/it/cc/explanations-cc).
+
 This part explains all the important objects that build an entry in the CC and it does so with the help of the federal constitution as an example of an entry in the CC.
 
 :::{admonition} Hint for legal laypersons
@@ -76,6 +78,10 @@ The following figure shows the general structure of an entry in the CC:
 General structure of an entry in the Classified Compilation (CC).
 :::
 
+## Legal Taxonomy
+
+As the name Classified Compilation suggests, there is a classification scheme that sorts the entries in the Classified Compilation according to a legal taxonomy. This taxonomy is hierarchical and formulated as [vocabulary](vocabularies.md#legal-taxonomy).
+
 ## Datatype Properties
 
 ### jolux:ConsolidationAbstract
@@ -95,7 +101,7 @@ General structure of an entry in the Classified Compilation (CC).
 Object properties that point to a vocabulary entry:
 
 - [jolux:typeDocument](vocabularies.md#text-types)
-- jolux:classifiedByTaxonomyEntry
+- [jolux:classifiedByTaxonomyEntry](vocabularies.md#legal-taxonomy)
 - jolux:inForceStatus
 
 Object properties that point to an individual:
