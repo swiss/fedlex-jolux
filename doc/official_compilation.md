@@ -70,7 +70,7 @@ Object properties that point to a vocabulary entry:
 
 - [jolux:processType](vocabularies.md#procedure-types)
 - [jolux:typeDocument](vocabularies.md#text-types)
-- jolux:classifiedByTaxonomyEntry
+- [jolux:classifiedByTaxonomyEntry](vocabularies.md#legal-taxonomy)
 - [jolux:legalRessourceGenre](vocabularies.md#act-types)
 - jolux:responsibilityOf
 
