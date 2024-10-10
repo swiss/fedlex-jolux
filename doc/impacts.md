@@ -50,6 +50,12 @@ The object predicate **jolux:impactFromLegalResource** is used to connect a jolu
 The object predicate **jolux:impactToLegalResource** is used to connect a jolux:LegalResourceImpact to a [jolux:LegalResourceSubdivision](#LegalResourceSubdivision) as a target of the impact.
 :::
 
+:::{admonition} jolux:impactConsolidatedBy
+:class: note
+:name: impactConsolidatedBy
+The object predicate **jolux:impactConsolidatedBy** is used to connect a jolux:LegalResourceImpact to a [jolux:LegalResourceSubdivision](#LegalResourceSubdivision) that is part of the corresponding [jolux:Consolidation](#Consolidation).
+:::
+
 ## Datatype Properties
 
 - [jolux:legalResourceImpactHasDateEntryInForce](#legalResourceImpactHasDateEntryInForce)
@@ -59,7 +65,7 @@ The object predicate **jolux:impactToLegalResource** is used to connect a jolux:
 - [jolux:legalResourceImpactHasType](vocabularies.md#impact-types)
 - [jolux:impactFromLegalResource](#impactFromLegalResource)
 - [jolux:impactToLegalResource](#impactToLegalResource)
-- jolux:impactConsolidatedBy
+- [jolux:impactConsolidatedBy](#impactConsolidatedBy)
 
 ## SPARQL Examples
 

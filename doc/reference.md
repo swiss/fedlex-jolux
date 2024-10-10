@@ -48,6 +48,7 @@ Link to individuals:
 - [basicAct](#basicAct)
 - [citationFromLegalResource](#citationFromLegalResource)
 - [citationToLegalResource](#citationToLegalResource)
+- [impactConsolidatedBy](#impactConsolidatedBy)
 - [impactFromLegalResource](#impactFromLegalResource)
 - [impactToLegalResource](#impactToLegalResource)
 - [isEmbodiedBy](#isEmbodiedBy)
