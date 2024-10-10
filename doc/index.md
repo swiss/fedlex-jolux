@@ -76,7 +76,7 @@ All URI of Fedlex raw data resources start with: `https://fedlex.data.admin.ch/e
 
 These URI can be found on the website of [Fedlex](https://www.fedlex.admin.ch/) through a search. The raw data URI is not the URL shown in the browser address field but can be copied by clicking on the chain icon. If an an URI is put into the browser address field, there is an automatic redirection to the webpage URL that displays the corresponding resource.
 
-Examples for the federal constitution in the CC:
+Examples for the federal constitution in the Classified Compilation:
 
 - URI: https://fedlex.data.admin.ch/eli/cc/1999/404
 - URL: https://www.fedlex.admin.ch/eli/cc/1999/404

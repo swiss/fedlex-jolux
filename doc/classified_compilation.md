@@ -1,21 +1,21 @@
 # Classified Compilation (CC)
 
-The *classified compilation (CC)* (also known as systematic compilation) is according to the [lexicon of parliamentary terms](https://www.parlament.ch/en/%C3%BCber-das-parlament/parlamentsw%C3%B6rterbuch/parlamentsw%C3%B6rterbuch-detail?WordId=216) a regularly updated and revised collection of the law texts of the official compilation arranged under subject headings.
+The *Classified Compilation (CC)* (also known as Systematic Compilation) is according to the [lexicon of parliamentary terms](https://www.parlament.ch/en/%C3%BCber-das-parlament/parlamentsw%C3%B6rterbuch/parlamentsw%C3%B6rterbuch-detail?WordId=216) a regularly updated and revised collection of the law texts of the Official Compilation arranged under subject headings.
 
 An important aspect of the Classified Compilation is the classification of the entries according to a legal taxonomy. A deeper explanation of the Classified Compilation is also available in [German](https://www.fedlex.admin.ch/de/cc/explanations-cc)/[French](https://www.fedlex.admin.ch/fr/cc/explanations-cc)/[Italian](https://www.fedlex.admin.ch/it/cc/explanations-cc).
 
-This part explains all the important objects that build an entry in the CC and it does so with the help of the federal constitution as an example of an entry in the CC.
+This part explains all the important objects that build an entry in the Classified Compilation and it does so with the help of the federal constitution as an example of an entry in the Classified Compilation.
 
 :::{admonition} Hint for legal laypersons
 :class: hint
-Entries in the CC are consolidations of entries in the OC. The main reason for having a Classified Compilation is a better usability of the law texts because the classified compilation represents the current state of a law text.
+Entries in the Classified Compilation are consolidations of entries in the Official Compilation. The main reason for having a Classified Compilation is a better usability of the law texts because the Classified Compilation represents the current state of a law text.
 
-It is important to realize that the CC is not legally binding, the source of the "true law" is always the OC.
+It is important to realize that the Classified Compilation is not legally binding, the source of the "true law" is always the Official Compilation.
 :::
 
 ## Example
 
-Throughout this sub-page, the federal constitution is used as an example of an entry in the CC.
+Throughout this sub-page, the federal constitution is used as an example of an entry in the Classified Compilation.
 
 - URI: https://fedlex.data.admin.ch/eli/cc/1999/404
 - URL: https://www.fedlex.admin.ch/eli/cc/1999/404
@@ -23,23 +23,23 @@ Throughout this sub-page, the federal constitution is used as an example of an e
 
 ## URI
 
-The URI of an entry in the CC contains the following parts:
+The URI of an entry in the Classified Compilation contains the following parts:
 
 - Standard namespace and path: `https://fedlex.data.admin.ch/eli/`
-- the part `cc/` denotes the classified compilation, meaning that this URI identifies something that is part of the CC of the federal law
+- the part `cc/` denotes the Classified Compilation, meaning that this URI identifies something that is part of the Classified Compilation of the federal law
 - `YYYY/` is the year of the publication
 - `ID` an identifier that has no specific meaning
 
 ## General Structure
 
-Every entry in the CC is of type jolux:ConsolidationAbstract.
+Every entry in the Classified Compilation is of type jolux:ConsolidationAbstract.
 
 :::{admonition} jolux:ConsolidationAbstract
 :class: note
 :name: ConsolidationAbstract
 The owl:Class **jolux:ConsolidationAbstract** is used for entries in the Classified Compilation.
 
-It is a consolidation because it consolidates different entries from the OC into a single document that shows the current state. The term *abstract* is not so much meant as a summary but as an abstraction.
+It is a consolidation because it consolidates different entries from the Official Compilation into a single document that shows the current state. The term *abstract* is not so much meant as a summary but as an abstraction.
 :::
 
 A jolux:ConsolidationAbstract has a jolux:Expression attached for representing the title and abbreviation in different languages of this consolidation because this does not change. But there are no jolux:Manifestation these only exist for jolux:Consolidation.
@@ -70,12 +70,12 @@ Each jolux:ConsolidationAbstract is based on an jolux:Act through jolux:basicAct
 The object property **jolux:basicAct** is used to connect a [jolux:ConsolidationAbstract](#ConsolidationAbstract) to a [jolux:Act](#Act). The connected act is the first version of the consolidation.
 :::
 
-The following figure shows the general structure of an entry in the CC:
+The following figure shows the general structure of an entry in the Classified Compilation:
 
 :::{figure-md} cc_general
 ![](img/cc_general.svg)
 
-General structure of an entry in the Classified Compilation (CC).
+General structure of an entry in the Classified Compilation.
 :::
 
 ## Legal Taxonomy

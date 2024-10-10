@@ -55,7 +55,7 @@ With help of jolux:LegalResourceSubdivision, it is possible to divide a law text
 
 ## SPARQL Examples
 
-The following query shows all the subdivisions of the federal constitution in the CC with its types:
+The following query shows all the subdivisions of the federal constitution in the Classified Compilation with its types:
 
 ```sparql
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>

@@ -1,6 +1,6 @@
 # Impacts
 
-Impacts is what connect entries in the CC and OC. The entries in the CC are consolidations of entries in the **Official Compilation** (OC). This means that entries in the OC usually have an impact on entries in the CC.
+Impacts is what connect entries in the Classified Compilation and Official Compilation. The entries in the Classified Compilation are consolidations of entries in the **Official Compilation**. This means that entries in the Official Compilation usually have an impact on entries in the Classified Compilation.
 
 Impacts are modelled as jolux:LegalResourceImpact.
 
@@ -28,7 +28,7 @@ The URI of a jolux:LegalResourceImpact contains the following parts:
 
 ## General Structure
 
-The following figure shows the connection between entries in the OC and CC trough jolux:LegalResourceImpact:
+The following figure shows the connection between entries in the Official Compilation and Classified Compilation trough jolux:LegalResourceImpact:
 
 :::{figure-md} impact
 ![](img/impact.svg)
@@ -36,7 +36,7 @@ The following figure shows the connection between entries in the OC and CC troug
 Connection between entries in the Official Compilation and the Classified Compilation through impacts.
 :::
 
-As it is shown in the figure above, the connection between jolux:LegalResourceImpact and the entries in the OC and CC is not direct but through [jolux:LegalResourceSubdivision](#LegalResourceSubdivision). The predicates used to connect the source and the target of the impact are jolux:impactFromLegalResource and jolux:impactToLegalResource.
+As it is shown in the figure above, the connection between jolux:LegalResourceImpact and the entries in the Official Compilation and Classified Compilation is not direct but through [jolux:LegalResourceSubdivision](#LegalResourceSubdivision). The predicates used to connect the source and the target of the impact are jolux:impactFromLegalResource and jolux:impactToLegalResource.
 
 :::{admonition} jolux:impactFromLegalResource
 :class: note
@@ -69,7 +69,7 @@ The object predicate **jolux:impactConsolidatedBy** is used to connect a jolux:L
 
 ## SPARQL Examples
 
-The following query shows all the entries in the OC, that have an impact on the federal constitution:
+The following query shows all the entries in the Official Compilation, that have an impact on the federal constitution:
 
 ```sparql
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>

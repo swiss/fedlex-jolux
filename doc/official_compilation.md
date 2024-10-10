@@ -2,18 +2,18 @@
 
 The *Official Compilation (OC)* is according to the [lexicon of parliamentary terms](https://www.parlament.ch/en/%C3%BCber-das-parlament/parlamentsw%C3%B6rterbuch/parlamentsw%C3%B6rterbuch-detail?WordId=11#q=official) the compilation of primarily the federal constitution, federal acts and federal decrees.
 
-This part explains all the important objects that build an entry in the OC and it does so with the help of the federal constitution as an example of an entry in the OC.
+This part explains all the important objects that build an entry in the Official Compilation and it does so with the help of the federal constitution as an example of an entry in the Official Compilation.
 
 :::{admonition} Hint for legal laypersons
 :class: hint
-Entries in the OC do not represent something like a current consolidated version of a legal resource but are some kind of "building blocks" of an actual law text. Updates to a legal text are published as "deltas" to already existing texts - much like an additional commit in software development.
+Entries in the Official Compilation do not represent something like a current consolidated version of a legal resource but are some kind of "building blocks" of an actual law text. Updates to a legal text are published as "deltas" to already existing texts - much like an additional commit in software development.
 
-In distinction from the OC, the current consolidated law texts are modelled in the [Classified Compilation](classified_compilation.md).
+In distinction from the Official Compilation, the current consolidated law texts are modelled in the [Classified Compilation](classified_compilation.md).
 :::
 
 ## Example
 
-Throughout this sub-page, the federal constitution is used as an example of an entry in the OC.
+Throughout this sub-page, the federal constitution is used as an example of an entry in the Official Compilation.
 
 - URI: https://fedlex.data.admin.ch/eli/oc/1999/404
 - URL: https://www.fedlex.admin.ch/eli/oc/1999/404
@@ -21,16 +21,16 @@ Throughout this sub-page, the federal constitution is used as an example of an e
 
 ## URI
 
-The URI of an entry in the OC contains the following parts:
+The URI of an entry in the Official Compilation contains the following parts:
 
 - Standard namespace and path: `https://fedlex.data.admin.ch/eli/`
-- the part `oc/` denotes the official compilation, meaning that this URI identifies something that is part of the OC of the federal law
+- the part `oc/` denotes the Official Compilation, meaning that this URI identifies something that is part of the Official Compilation of the federal law
 - `YYYY/` is the year of the publication
 - `ID` an identifier that has no specific meaning
 
 ## General Structure
 
-Every entry in the OC is of type jolux:Act.
+Every entry in the Official Compilation is of type jolux:Act.
 
 :::{admonition} jolux:Act
 :class: note
@@ -40,12 +40,12 @@ The owl:Class **jolux:Act** is used for entries in the Official Compilation and 
 
 For jolux:Act, the additional [abstraction levels](abstraction_levels.md) jolux:Expression and jolux:Manifestation are also available for all entries.
 
-The following figure shows the general structure of an entry in the OC:
+The following figure shows the general structure of an entry in the Official Compilation:
 
 :::{figure-md} oc_general
 ![](img/oc_general.svg)
 
-General structure of an entry in the Official Compilation (CC).
+General structure of an entry in the Official Compilation.
 :::
 
 As the jolux:Act is a very abstract representation of a law text, there is e.g. no title of the law attached to the jolux:Act because this is something language specific and therefore added to the [jolux:Expression](#Expression) of the jolux:Act.
