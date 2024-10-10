@@ -5,7 +5,7 @@ Legal texts often refer other legislative resources in the form of citations. In
 :::{admonition} jolux:Citation
 :class: note
 :name: Citation
-A **jolux:Citation** is used to model citations between legal resources.
+A **jolux:Citation** is used to model citations between legislative resources.
 :::
 
 The following figure shows the general structure of a citation:

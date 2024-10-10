@@ -2,7 +2,7 @@
 
 In RDF, a vocabulary is a **set of predefined terms**, that is used to describe resources. These terms are defined in a way that allows them to be used **consistently across different datasets**. In the case of JOLux, vocabularies are specifically used only on the object position of RDF triples.
 
-Fedlex defines and makes use of multiple vocabularies. This sub-page lists an overview and the main vocabularies and its associated properties that are used in describing the legal resources.
+Fedlex defines and makes use of multiple vocabularies. This sub-page lists an overview and the main vocabularies and its associated properties that are used in describing the legislative resources.
 
 ## Available Vocabularies
 

@@ -1,17 +1,17 @@
 # Chronology
 
-The term **chronology** is used to list all legal resources that are relevant for a specific entry in the [Classified Compilation](classified_compilation.md).
+The term **chronology** is used to list all legislative resources that are relevant for a specific entry in the [Classified Compilation](classified_compilation.md).
 
-There are different mechanisms how legal resources can be relevant for the chronology:
+There are different mechanisms how legislative resources can be relevant for the chronology:
 
 ## Draft
 
-In creating a new legal resource, a [jolux:Draft](#Draft) is created.
+In creating a new legislative resource, a [jolux:Draft](#Draft) is created.
 
 :::{admonition} jolux:Draft
 :class: note
 :name: Draft
-A **jolux:Draft** is used to bundle all the activities and documents during the process of drafting a new legal resource.
+A **jolux:Draft** is used to bundle all the activities and documents during the process of drafting a new legislative resource.
 :::
 
 The following figure shows the general structure of a [jolux:Draft](#Draft):
@@ -35,7 +35,7 @@ SELECT ?act WHERE {
 
 ## Impact
 
-If new legal resources are created that have an impact on existing ones, they are modelled as [jolux:Impact](#Impact).
+If new legislative resources are created that have an impact on existing ones, they are modelled as [jolux:Impact](#Impact).
 
 The following SPARQL query shows all the [jolux:Act](#Act) that have an impact on the Federal Constitution:
 

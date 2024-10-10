@@ -7,7 +7,7 @@ In JOLux, all the different legislative resources are usually described through 
 :::{admonition} jolux:Work
 :class: note
 :name: Work
-The owl:Class **jolux:Work** is a general abstraction for all the different legal resources in JOLux. All the objects with type jolux:Work have additional types added to differentiate between the diverse legal resources. 
+The owl:Class **jolux:Work** is a general abstraction for all the different legislative resources in JOLux. All the objects with type jolux:Work have additional types added to differentiate between the diverse legislative resources. 
 
 As jolux:Work is a general abstraction, the jolux:Work is *language and file-format agnostic*.
 :::
@@ -24,7 +24,7 @@ The owl:Class **jolux:Expression** is a *language specific* representation of a 
 The owl:Class **jolux:Manifestation** is a *file-format specific* representation of a jolux:Expression entity. So an jolux:Manifestation is a *language and file-format specific* representation of a jolux:Work.
 :::
 
-So basically, [jolux:Work](#Work), [jolux:Expression](#Expression) and [jolux:Manifestation](#Manifestation) always come together to form a rich representation of a legal resource. 
+So basically, [jolux:Work](#Work), [jolux:Expression](#Expression) and [jolux:Manifestation](#Manifestation) always come together to form a rich representation of a legislative resource. 
 
 ## Object Properties
 

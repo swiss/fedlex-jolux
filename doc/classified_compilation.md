@@ -1,6 +1,6 @@
 # Classified Compilation (CC)
 
-The *Classified Compilation (CC)* (also known as Systematic Compilation) is according to the [lexicon of parliamentary terms](https://www.parlament.ch/en/%C3%BCber-das-parlament/parlamentsw%C3%B6rterbuch/parlamentsw%C3%B6rterbuch-detail?WordId=216) a regularly updated and revised collection of the law texts of the Official Compilation arranged under subject headings.
+The *Classified Compilation (CC)* (also known as Systematic Compilation) is according to the [lexicon of parliamentary terms](https://www.parlament.ch/en/%C3%BCber-das-parlament/parlamentsw%C3%B6rterbuch/parlamentsw%C3%B6rterbuch-detail?WordId=216) a regularly updated and revised collection of the legislative resources of the Official Compilation arranged under subject headings.
 
 An important aspect of the Classified Compilation is the classification of the entries according to a legal taxonomy. A deeper explanation of the Classified Compilation is also available in [German](https://www.fedlex.admin.ch/de/cc/explanations-cc)/[French](https://www.fedlex.admin.ch/fr/cc/explanations-cc)/[Italian](https://www.fedlex.admin.ch/it/cc/explanations-cc).
 
@@ -8,7 +8,7 @@ This part explains all the important objects that build an entry in the Classifi
 
 :::{admonition} Hint for legal laypersons
 :class: hint
-Entries in the Classified Compilation are consolidations of entries in the Official Compilation. The main reason for having a Classified Compilation is a better usability of the law texts because the Classified Compilation represents the current state of a law text.
+Entries in the Classified Compilation are consolidations of entries in the Official Compilation. The main reason for having a Classified Compilation is a better usability of the legislative resources because the Classified Compilation represents the current state of a legislative resource.
 
 It is important to realize that the Classified Compilation is not legally binding, the source of the "true law" is always the Official Compilation.
 :::

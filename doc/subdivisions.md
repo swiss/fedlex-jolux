@@ -1,11 +1,11 @@
 # Subdivisions
 
-To structure a law text further, jolux:LegalResourceSubdivision is used:
+To structure a legislative resource further, jolux:LegalResourceSubdivision is used:
 
 :::{admonition} jolux:LegalResourceSubdivision
 :class: note
 :name: LegalResourceSubdivision
-The class **jolux:LegalResourceSubdivision** is used to structure each law text into units: Article (basic unit) and elements above and below this in the hierarchy, as well as annexes and other elements. The concrete unit is attached by using [jolux:legalResourceSubdivisionType](vocabularies.md#subdivision-types).
+The class **jolux:LegalResourceSubdivision** is used to structure each legislative resource into units: Article (basic unit) and elements above and below this in the hierarchy, as well as annexes and other elements. The concrete unit is attached by using [jolux:legalResourceSubdivisionType](vocabularies.md#subdivision-types).
 :::
 
 ## Example
@@ -45,7 +45,7 @@ The jolux:LegalResourceSubdivision have a type from the [subdivision types vocab
 
 :::{admonition} Hint for legal laypersons
 :class: hint
-With help of jolux:LegalResourceSubdivision, it is possible to divide a law text also on the level of the individual [articles](https://fedlex.data.admin.ch/de-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Fsubdivision-type%2Fart). But this is not systematically done (yet). The single articles are only modelled when it is necessary for a [jolux:LegalResourceImpact](#LegalResourceImpact) (see [SPARQL examples](#sparql-examples) below).
+With help of jolux:LegalResourceSubdivision, it is possible to divide a legislative resource also on the level of the individual [articles](https://fedlex.data.admin.ch/de-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Fsubdivision-type%2Fart). But this is not systematically done (yet). The single articles are only modelled when it is necessary for a [jolux:LegalResourceImpact](#LegalResourceImpact) (see [SPARQL examples](#sparql-examples) below).
 :::
 
 ## Object Properties

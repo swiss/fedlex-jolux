@@ -11,7 +11,7 @@ The concerned articles of older changes are modelled via a [jolux:impactToLegalR
 :::{admonition} jolux:impactToLegalResourceComment
 :class: note
 :name: impactToLegalResourceComment
-The datatype property **jolux:impactToLegalResourceComment** lists the impacted articles on the legal resource from the [jolux:Impact](#Impact) as `rdf:langString`.
+The datatype property **jolux:impactToLegalResourceComment** lists the impacted articles on the legislative resource from the [jolux:Impact](#Impact) as `rdf:langString`.
 :::
 
 ## Newer Changes
