@@ -102,7 +102,7 @@ Object properties that point to a vocabulary entry:
 
 - [jolux:typeDocument](vocabularies.md#text-types)
 - [jolux:classifiedByTaxonomyEntry](vocabularies.md#legal-taxonomy)
-- jolux:inForceStatus
+- [jolux:inForceStatus](vocabularies.md#enforcement-status)
 
 Object properties that point to an individual:
 

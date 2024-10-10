@@ -110,6 +110,26 @@ SELECT ?term ?label WHERE {
 }
 ```
 
+## Enforcement Status
+
+- URI: https://fedlex.data.admin.ch/vocabulary/enforcement-status
+- Description: The **enforcement status** vocabulary is used to classify the type of a [jolux:ConsolidationAbstract](#ConsolidationAbstract).
+- Predicates: jolux:inForceStatus
+- [Metadata viewer](https://fedlex.data.admin.ch/en-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Fenforcement-status)
+
+The following SPARQL query shows all the entries of this vocabulary with its labels:
+
+```sparql
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
+SELECT ?term ?label WHERE {
+    ?term skos:inScheme <https://fedlex.data.admin.ch/vocabulary/enforcement-status>;
+        skos:prefLabel ?label.
+    FILTER NOT EXISTS {?term a skos:Collection}
+    FILTER (lang(?label) = "en")
+}
+```
+
 ## Impact Types
 
 - URI: https://fedlex.data.admin.ch/vocabulary/impact-type
