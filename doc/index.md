@@ -56,6 +56,10 @@ Graphical representation of JOLux ontology elements.
 
 The figure above can be read as: Some object of type [jolux:Act](#Act) is connected to an object of type [jolux:Expression](#Expression) via predicate [jolux:isRealizedBy](#isRealizedBy). So the single bubbles do not represent concrete objects but signal class memberships.
 
+## Website as PDF
+
+This website is also available as [PDF](https://github.com/swiss/jolux/blob/gh-pages/pdf/jolux.pdf).
+
 ## SPARQL Queries
 
 Throughout this webpage, there are examples of SPARQL queries given. The idea is, that these are real queries that can be executed on the [Fedlex SPARQL GUI](https://fedlex.data.admin.ch/en-CH/sparql) to get real up to date results. To do so, below every SPARQL example query, there is a "Execute Query" button that transfers the corresponding query into the SPARQL GUI and executes it to show the tabular result. As the source code of these queries is also given, the user should be encouraged to modify these queries directly in the SPARQL GUI or use it programmatically to their own needs.
