@@ -73,7 +73,8 @@ The object property **jolux:basicAct** is used to connect a [jolux:Consolidation
 The following figure shows the general structure of an entry in the Classified Compilation:
 
 :::{figure-md} cc_general
-![](img/cc_general.svg)
+
+<img src="img/cc_general.png" class="custom-max-width">
 
 General structure of an entry in the Classified Compilation.
 :::

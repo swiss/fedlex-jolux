@@ -51,7 +51,8 @@ The object property **jolux:isExemplifiedBy** points from a [jolux:Manifestation
 The following figure shows the different abstraction levels and the object properties to connect them:
 
 :::{figure-md} abs_levels
-![](img/abstraction_levels.png)
+
+<img src="img/abstraction_levels.png" class="custom-max-width">
 
 Relation between jolux:Work, jolux:Expression und jolux:Manifestation.
 :::

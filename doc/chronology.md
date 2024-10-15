@@ -17,7 +17,8 @@ A **jolux:Draft** is used to bundle all the activities and documents during the 
 The following figure shows the general structure of a [jolux:Draft](#Draft):
 
 :::{figure-md} draft_fig
-![](img/draft.svg)
+
+<img src="img/draft.png" class="custom-max-width">
 
 General structure of a jolux:Draft.
 :::

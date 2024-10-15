@@ -31,7 +31,8 @@ The URI of a jolux:LegalResourceImpact contains the following parts:
 The following figure shows the connection between entries in the Official Compilation and Classified Compilation trough jolux:LegalResourceImpact:
 
 :::{figure-md} impact
-![](img/impact.svg)
+
+<img src="img/impact.png" class="custom-max-width">
 
 Connection between entries in the Official Compilation and the Classified Compilation through impacts.
 :::

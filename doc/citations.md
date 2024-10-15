@@ -11,7 +11,8 @@ A **jolux:Citation** is used to model citations between legislative resources.
 The following figure shows the general structure of a citation:
 
 :::{figure-md} citation_fig
-![](img/citation.svg)
+
+<img src="img/citation.png" class="custom-max-width">
 
 General structure of a citation.
 :::

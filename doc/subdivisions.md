@@ -28,7 +28,8 @@ The URI of a jolux:LegalResourceSubdivision contains the following parts:
 The following figure shows the general structure of a jolux:LegalResourceSubdivision:
 
 :::{figure-md} subdivision
-![](img/subdivision.svg)
+
+<img src="img/subdivision.png" class="custom-max-width">
 
 General structure of a jolux:LegalResourceSubdivision.
 :::
