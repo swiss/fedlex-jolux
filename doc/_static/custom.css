@@ -5,3 +5,9 @@
 .docutils.literal.notranslate {
     color: black !important;
 }
+
+img.custom-max-width {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
