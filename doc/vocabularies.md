@@ -92,10 +92,14 @@ SELECT DISTINCT ?vocabulary ?name_en WHERE {
 
 ## Act Types
 
+:::{admonition} Act Types
+:class: important
+:name: act-types
 - URI: https://fedlex.data.admin.ch/vocabulary/legal-resource-genre
 - Description: The **act types** vocabulary is used to classify the type of a jolux:Act.
 - Predicates: jolux:legalResourceGenre
 - [Metadata viewer](https://fedlex.data.admin.ch/en-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Flegal-resource-genre)
+:::
 
 The following SPARQL query shows all the entries of this vocabulary with its labels:
 
@@ -112,10 +116,14 @@ SELECT ?term ?label WHERE {
 
 ## Enforcement Status
 
+:::{admonition} Enforcement Status
+:class: important
+:name: enforcement-status
 - URI: https://fedlex.data.admin.ch/vocabulary/enforcement-status
 - Description: The **enforcement status** vocabulary is used to classify the type of a [jolux:ConsolidationAbstract](#ConsolidationAbstract).
 - Predicates: jolux:inForceStatus
 - [Metadata viewer](https://fedlex.data.admin.ch/en-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Fenforcement-status)
+:::
 
 The following SPARQL query shows all the entries of this vocabulary with its labels:
 
@@ -132,10 +140,14 @@ SELECT ?term ?label WHERE {
 
 ## Impact Types
 
+:::{admonition} Impact Types
+:class: important
+:name: impact-types
 - URI: https://fedlex.data.admin.ch/vocabulary/impact-type
 - Description: The **impact types** vocabulary is used to classify the type of a jolux:LegalResourceImpact.
 - Predicates: jolux:legalResourceImpactHasType
 - [Metadata viewer](https://fedlex.data.admin.ch/en-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Fimpact-type)
+:::
 
 The following SPARQL query shows all the entries of this vocabulary with its labels:
 
@@ -152,10 +164,14 @@ SELECT ?term ?label WHERE {
 
 ## Legal Institution
 
+:::{admonition} Legal Institution
+:class: important
+:name: legal-institution
 - URI: https://fedlex.data.admin.ch/vocabulary/legal-institution
 - Description: The **legal institution** vocabulary is used to add the responsibility of an institution for [jolux:Act](#Act).
 - Predicates: jolux:responsibilityOf
 - [Metadata viewer](https://fedlex.data.admin.ch/en-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Flegal-institution)
+:::
 
 The following SPARQL query shows all the entries of this vocabulary with its labels:
 
@@ -193,10 +209,14 @@ SELECT (GROUP_CONCAT(CONCAT(STR(?endpoint_level), ": ", STR(?endpoint_label)); s
 
 ## Legal Taxonomy
 
+:::{admonition} Legal Taxonomy
+:class: important
+:name: legal-taxonomy
 - URI: https://fedlex.data.admin.ch/vocabulary/legal-taxonomy
 - Description: The **legal taxonomy** vocabulary is used to classify entries of a [jolux:ConsolidationAbstract](#ConsolidationAbstract).
 - Predicates: jolux:classifiedByTaxonomyEntry 
 - [Metadata viewer](https://fedlex.data.admin.ch/en-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Flegal-taxonomy)
+:::
 
 The following SPARQL query shows all the entries of this vocabulary with its labels:
 
@@ -234,10 +254,14 @@ SELECT (GROUP_CONCAT(CONCAT(STR(?endpoint_level), ": ", STR(?endpoint_label)); s
 
 ## Procedure Types
 
+:::{admonition} Procedure Types
+:class: important
+:name: procedure-types
 - URI: https://fedlex.data.admin.ch/vocabulary/type-procedure
 - Description: The **procedure types** vocabulary is used to classify the type of a jolux:Act.
 - Predicates: jolux:processType
 - [Metadata viewer](https://fedlex.data.admin.ch/en-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Ftype-procedure)
+:::
 
 The following SPARQL query shows all the entries of this vocabulary with its labels:
 
@@ -254,10 +278,14 @@ SELECT ?term ?label WHERE {
 
 ## Subdivision Types
 
+:::{admonition} Subdivision Types
+:class: important
+:name: subdivision-types
 - URI: https://fedlex.data.admin.ch/vocabulary/subdivision-type
 - Description: The **subdivision types** vocabulary is used to classify the type of a jolux:LegalResourceSubdivision.
 - Predicates: jolux:legalResourceSubdivisionType
 - [Metadata viewer](https://fedlex.data.admin.ch/en-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Fsubdivision-type)
+:::
 
 The following SPARQL query shows all the entries of this vocabulary with its labels:
 
@@ -295,10 +323,14 @@ SELECT (GROUP_CONCAT(CONCAT(STR(?endpoint_level), ": ", STR(?endpoint_label)); s
 
 ## Text Types
 
+:::{admonition} Text Types
+:class: important
+:name: text-types
 - URI: https://fedlex.data.admin.ch/vocabulary/resource-type
 - Description: The **text types** vocabulary is used to classify the text type of a jolux:Work.
 - Predicates: jolux:typeDocument, jolux:historicalTypeDocument
 - [Metadata viewer](https://fedlex.data.admin.ch/en-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Fresource-type)
+:::
 
 The following SPARQL query shows all the entries of this vocabulary with its labels:
 

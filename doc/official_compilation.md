@@ -69,11 +69,11 @@ The object property **jolux:isPartOf** is used to connect a [jolux:Act](#Act) to
 
 Object properties that point to a vocabulary entry:
 
-- [jolux:processType](vocabularies.md#procedure-types)
-- [jolux:typeDocument](vocabularies.md#text-types)
-- [jolux:classifiedByTaxonomyEntry](vocabularies.md#legal-taxonomy)
-- [jolux:legalRessourceGenre](vocabularies.md#act-types)
-- [jolux:responsibilityOf](vocabularies.md#legal-institution)
+- [jolux:processType](#procedure-types)
+- [jolux:typeDocument](#text-types)
+- [jolux:classifiedByTaxonomyEntry](#legal-taxonomy)
+- [jolux:legalRessourceGenre](#act-types)
+- [jolux:responsibilityOf](#legal-institution)
 
 Object properties that point to an individual:
 

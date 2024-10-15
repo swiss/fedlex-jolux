@@ -63,7 +63,12 @@ The object predicate **jolux:impactConsolidatedBy** is used to connect a jolux:L
 
 ## Object Properties
 
-- [jolux:legalResourceImpactHasType](vocabularies.md#impact-types)
+Object properties that point to a vocabulary entry:
+
+- [jolux:legalResourceImpactHasType](#impact-types)
+
+Object properties that point to an individual:
+
 - [jolux:impactFromLegalResource](#impactFromLegalResource)
 - [jolux:impactToLegalResource](#impactToLegalResource)
 - [jolux:impactConsolidatedBy](#impactConsolidatedBy)

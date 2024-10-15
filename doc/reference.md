@@ -33,15 +33,15 @@ Others:
 
 Link to vocabulary entries:
 
-- [classifiedByTaxonomyEntry](vocabularies.md#legal-taxonomy)
-- [historicalTypeDocument](vocabularies.md#text-types)
-- [inForceStatus](vocabularies.md#enforcement-status)
-- [legalRessourceGenre](vocabularies.md#act-types)
-- [legalResourceImpactHasType](vocabularies.md#impact-types)
-- [legalResourceSubdivisionType](vocabularies.md#subdivision-types)
-- [processType](vocabularies.md#procedure-types)
-- [responsibilityOf](vocabularies.md#legal-institution)
-- [typeDocument](vocabularies.md#text-types)
+- [classifiedByTaxonomyEntry](#legal-taxonomy)
+- [historicalTypeDocument](#text-types)
+- [inForceStatus](#enforcement-status)
+- [legalRessourceGenre](#act-types)
+- [legalResourceImpactHasType](#impact-types)
+- [legalResourceSubdivisionType](#subdivision-types)
+- [processType](#procedure-types)
+- [responsibilityOf](#legal-institution)
+- [typeDocument](#text-types)
 
 Link to individuals:
 

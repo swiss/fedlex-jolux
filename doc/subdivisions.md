@@ -5,7 +5,7 @@ To structure a legislative resource further, jolux:LegalResourceSubdivision is u
 :::{admonition} jolux:LegalResourceSubdivision
 :class: note
 :name: LegalResourceSubdivision
-The class **jolux:LegalResourceSubdivision** is used to structure each legislative resource into units: Article (basic unit) and elements above and below this in the hierarchy, as well as annexes and other elements. The concrete unit is attached by using [jolux:legalResourceSubdivisionType](vocabularies.md#subdivision-types).
+The class **jolux:LegalResourceSubdivision** is used to structure each legislative resource into units: Article (basic unit) and elements above and below this in the hierarchy, as well as annexes and other elements. The concrete unit is attached by using [jolux:legalResourceSubdivisionType](#subdivision-types).
 :::
 
 ## Example
@@ -42,7 +42,7 @@ The jolux:LegalResourceSubdivision is bound to a jolux:Work through jolux:legalR
 The property **jolux:legalResourceSubdivisionIsPartOf** is used to connect a jolux:LegalResourceSubdivision with its [jolux:Work](#Work).
 :::
 
-The jolux:LegalResourceSubdivision have a type from the [subdivision types vocabulary](vocabularies.md#subdivision-types).
+The jolux:LegalResourceSubdivision have a type from the [subdivision types vocabulary](#subdivision-types).
 
 :::{admonition} Hint for legal laypersons
 :class: hint
@@ -51,7 +51,12 @@ With help of jolux:LegalResourceSubdivision, it is possible to divide a legislat
 
 ## Object Properties
 
-- [jolux:legalResourceSubdivisionType](vocabularies.md#subdivision-types)
+Object properties that point to a vocabulary entry:
+
+- [jolux:legalResourceSubdivisionType](#subdivision-types)
+
+Object properties that point to an individual:
+
 - [jolux:legalResourceSubdivisionIsPartOf](#legalResourceSubdivisionIsPartOf)
 
 ## SPARQL Examples

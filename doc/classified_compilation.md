@@ -81,7 +81,7 @@ General structure of an entry in the Classified Compilation.
 
 ## Legal Taxonomy
 
-As the name Classified Compilation suggests, there is a classification scheme that sorts the entries in the Classified Compilation according to a legal taxonomy. This taxonomy is hierarchical and formulated as [vocabulary](vocabularies.md#legal-taxonomy).
+As the name Classified Compilation suggests, there is a classification scheme that sorts the entries in the Classified Compilation according to a legal taxonomy. This taxonomy is hierarchical and formulated as [vocabulary](#legal-taxonomy).
 
 ## Datatype Properties
 
@@ -101,9 +101,9 @@ As the name Classified Compilation suggests, there is a classification scheme th
 
 Object properties that point to a vocabulary entry:
 
-- [jolux:typeDocument](vocabularies.md#text-types)
-- [jolux:classifiedByTaxonomyEntry](vocabularies.md#legal-taxonomy)
-- [jolux:inForceStatus](vocabularies.md#enforcement-status)
+- [jolux:typeDocument](#text-types)
+- [jolux:classifiedByTaxonomyEntry](#legal-taxonomy)
+- [jolux:inForceStatus](#enforcement-status)
 
 Object properties that point to an individual:
 

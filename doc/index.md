@@ -48,7 +48,8 @@ The visual representation of parts of the JOLux ontology on this website is loos
 The following figure shows the elements of graphical representation of JOLux in this documentation using an example of a [jolux:Act](#Act):
 
 :::{figure-md} ontology_elements
-![](img/ontology_elements.svg)
+
+<img src="img/ontology_elements.png" class="custom-max-width">
 
 Graphical representation of JOLux ontology elements.
 :::
