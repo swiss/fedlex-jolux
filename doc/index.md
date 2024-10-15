@@ -49,7 +49,7 @@ The following figure shows the elements of graphical representation of JOLux in 
 
 :::{figure-md} ontology_elements
 
-<img src="img/ontology_elements.png" class="custom-max-width">
+<img src="img/ontology_elements.png" class="max-width-600">
 
 Graphical representation of JOLux ontology elements.
 :::

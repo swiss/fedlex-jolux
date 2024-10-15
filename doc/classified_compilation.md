@@ -74,7 +74,7 @@ The following figure shows the general structure of an entry in the Classified C
 
 :::{figure-md} cc_general
 
-<img src="img/cc_general.png" class="custom-max-width">
+<img src="img/cc_general.png">
 
 General structure of an entry in the Classified Compilation.
 :::

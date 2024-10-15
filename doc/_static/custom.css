@@ -6,8 +6,26 @@
     color: black !important;
 }
 
-img.custom-max-width {
+img.max-width-300 {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+img.max-width-400 {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+
+img.max-width-500 {
     max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
+img.max-width-600 {
+    max-width: 600px;
     width: 100%;
     height: auto;
 }

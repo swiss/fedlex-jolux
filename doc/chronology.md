@@ -18,7 +18,7 @@ The following figure shows the general structure of a [jolux:Draft](#Draft):
 
 :::{figure-md} draft_fig
 
-<img src="img/draft.png" class="custom-max-width">
+<img src="img/draft.png" class="max-width-600">
 
 General structure of a jolux:Draft.
 :::

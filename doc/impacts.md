@@ -32,7 +32,7 @@ The following figure shows the connection between entries in the Official Compil
 
 :::{figure-md} impact
 
-<img src="img/impact.png" class="custom-max-width">
+<img src="img/impact.png">
 
 Connection between entries in the Official Compilation and the Classified Compilation through impacts.
 :::

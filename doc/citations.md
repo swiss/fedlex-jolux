@@ -12,7 +12,7 @@ The following figure shows the general structure of a citation:
 
 :::{figure-md} citation_fig
 
-<img src="img/citation.png" class="custom-max-width">
+<img src="img/citation.png">
 
 General structure of a citation.
 :::

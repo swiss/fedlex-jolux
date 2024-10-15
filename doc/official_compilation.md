@@ -44,7 +44,7 @@ The following figure shows the general structure of an entry in the Official Com
 
 :::{figure-md} oc_general
 
-<img src="img/oc_general.png" class="custom-max-width">
+<img src="img/oc_general.png" class="max-width-500">
 
 General structure of an entry in the Official Compilation.
 :::

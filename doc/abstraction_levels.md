@@ -52,7 +52,7 @@ The following figure shows the different abstraction levels and the object prope
 
 :::{figure-md} abs_levels
 
-<img src="img/abstraction_levels.png" class="custom-max-width">
+<img src="img/abstraction_levels.png" class="max-width-500">
 
 Relation between jolux:Work, jolux:Expression und jolux:Manifestation.
 :::

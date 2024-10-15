@@ -29,7 +29,7 @@ The following figure shows the general structure of a jolux:LegalResourceSubdivi
 
 :::{figure-md} subdivision
 
-<img src="img/subdivision.png" class="custom-max-width">
+<img src="img/subdivision.png" class="max-width-600">
 
 General structure of a jolux:LegalResourceSubdivision.
 :::
