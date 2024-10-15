@@ -53,6 +53,10 @@ html_theme_options = {
 
 html_static_path = ['_static']
 
+rinoh_documents = [dict(doc='index',
+                        target='jolux')]
+
+
 # add custom js for sparql link generation
 def setup(app):
     app.add_js_file('sparql_link.js')
