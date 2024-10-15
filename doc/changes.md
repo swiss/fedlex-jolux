@@ -18,7 +18,7 @@ The datatype property **jolux:impactToLegalResourceComment** lists the impacted 
 
 For newer changes, the impacted articles are modelled as [jolux:LegalResourceSubdivision](#LegalResourceSubdivision).
 
-## SPARQL Query
+## SPARQL Examples
 
 The following sparql query lists all the impacts on the Federal Constitution. The concerned articles are either given in the [jolux:impactToLegalResourceComment](#impactToLegalResourceComment) or modelled as [jolux:LegalResourceSubdivision](#LegalResourceSubdivision):
 
