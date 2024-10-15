@@ -58,7 +58,7 @@ The figure above can be read as: Some object of type [jolux:Act](#Act) is connec
 
 ## Website as PDF
 
-This website is also available as [PDF](https://github.com/swiss/jolux/blob/gh-pages/pdf/jolux.pdf).
+This website is also available as [PDF](https://raw.githubusercontent.com/swiss/jolux/gh-pages/pdf/jolux.pdf).
 
 ## SPARQL Queries
 
