@@ -12,3 +12,30 @@ Please open [issues](https://github.com/swiss/jolux/issues) on this repository o
 
 > [!CAUTION]
 > 2024-09-26: This is an ongoing project between the Federal Chancellery and the [Institute for Public Sector Transformation](https://www.bfh.ch/en/research/research-areas/public-sector-transformation/) of the [Bern University of Applied Sciences](https://www.bfh.ch/en/). The content is not yet stable. Further updates will follow.
+
+## Local Build Instructions
+
+For building the JOLux ontology documentation locally, follow these instructions:
+
+### Clone the Repository
+
+```
+git clone https://github.com/swiss/jolux.git
+cd jolux
+```
+
+### Set Up the Virtual Environment
+
+```
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+### Build the Documentation
+
+```
+sphinx-build doc _build # build HTML
+sphinx-build -b rinoh doc _build/pdf # build PDF
+```

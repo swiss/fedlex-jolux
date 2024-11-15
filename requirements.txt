@@ -1,0 +1,7 @@
+sphinx
+sphinx-book-theme
+myst_parser
+sphinxcontrib-mermaid
+linkify-it-py
+rinohtype
+rinoh-typeface-texgyreheros
