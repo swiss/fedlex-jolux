@@ -12,6 +12,7 @@ subdivisions.md
 chronology.md
 changes.md
 citations.md
+treaties.md
 vocabularies.md
 dates.md
 reference.md
