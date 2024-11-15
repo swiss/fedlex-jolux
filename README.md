@@ -19,14 +19,14 @@ For building the JOLux ontology documentation locally, follow these instructions
 
 ### Clone the Repository
 
-```
+```bash
 git clone https://github.com/swiss/jolux.git
 cd jolux
 ```
 
 ### Set Up the Virtual Environment
 
-```
+```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install --upgrade pip
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 ### Build the Documentation
 
-```
+```bash
 sphinx-build doc _build # build HTML
 sphinx-build -b rinoh doc _build/pdf # build PDF
 ```
