@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'JOLux'
+project = 'Fedlex-JOLux'
 copyright = 'Federal Chancellery'
 author = 'Jean-Louis Morard, Benedikt Hitz-Gamper'
 release = '0.1'
@@ -36,7 +36,7 @@ myst_enable_extensions = ["deflist",
 html_theme = 'sphinx_book_theme'
 
 html_theme_options = {
-    "repository_url": "https://github.com/swiss/jolux",
+    "repository_url": "https://github.com/swiss/fedlex-jolux",
     "path_to_docs": "doc",
     "use_repository_button": True,
     "use_source_button": True,
@@ -46,7 +46,7 @@ html_theme_options = {
         "text": "JOLux Ontology",
         "image_light": "img/logo-ch.svg",
         "image_dark": "img/logo-ch.svg",
-        "link": "https://swiss.github.io/jolux"
+        "link": "https://swiss.github.io/fedlex-jolux"
     },
     "navigation_depth": 2
 }
