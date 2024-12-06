@@ -8,30 +8,30 @@ Fedlex defines and makes use of multiple vocabularies. This sub-page lists an ov
 
 As all vocabularies are modelled as having the class [skos:ConceptScheme](https://www.w3.org/TR/skos-reference/#schemes), the metadata viewer can give all the vocabularies as incoming relations to skos:ConceptScheme and therefore serves as an [overview on all available vocabularies](https://fedlex.data.admin.ch/de-CH/metadata?value=http:%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23ConceptScheme).
 
-In addition, the following SPARQL query shows all vocabularies with its name in English, German and French. The name is either `purl:title` where available and otherwise `rdfs:label` or empty if there is neither:
+In addition, the following SPARQL query shows all vocabularies with its name in English, German and French. The name is either `dcterms:title` where available and otherwise `rdfs:label` or empty if there is neither:
 
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX purl: <http://purl.org/dc/terms/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 SELECT DISTINCT ?vocabulary ?name_en ?name_de ?name_fr WHERE {
     ?vocabulary a skos:ConceptScheme.
   
   # English title
   OPTIONAL {
-    ?vocabulary purl:title ?title_en .
+    ?vocabulary dcterms:title ?title_en .
     FILTER(LANG(?title_en) = "en")
   }
   
   # German title
   OPTIONAL {
-    ?vocabulary purl:title ?title_de .
+    ?vocabulary dcterms:title ?title_de .
     FILTER(LANG(?title_de) = "de")
   }
   
   # French title
   OPTIONAL {
-    ?vocabulary purl:title ?title_fr .
+    ?vocabulary dcterms:title ?title_fr .
     FILTER(LANG(?title_fr) = "fr")
   }
   
@@ -66,7 +66,7 @@ Some vocabularies are modelled as hierarchy or taxonomy of entries. The followin
 
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX purl: <http://purl.org/dc/terms/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 SELECT DISTINCT ?vocabulary ?name_en WHERE {
     ?vocabulary a skos:ConceptScheme;
@@ -75,7 +75,7 @@ SELECT DISTINCT ?vocabulary ?name_en WHERE {
   
   # English title
   OPTIONAL {
-    ?vocabulary purl:title ?title_en .
+    ?vocabulary dcterms:title ?title_en .
     FILTER(LANG(?title_en) = "en")
   }
   
@@ -251,6 +251,8 @@ SELECT (GROUP_CONCAT(CONCAT(STR(?endpoint_level), ": ", STR(?endpoint_label)); s
     } ORDER BY ?intermediate ?endpoint_level
 } GROUP BY ?intermediate ORDER BY ?hierarchy
 ```
+
+As this is a very important vocabulary, there are also two special webpages that show these hierarchical legal taxonomy entries. One for [Swiss law](https://www.fedlex.admin.ch/en/cc/internal-law/1) and one for [international law](https://www.fedlex.admin.ch/en/cc/international-law/0.1).
 
 ## Procedure Types
 
