@@ -17,6 +17,8 @@ The following figure shows the general structure of a citation:
 General structure of a citation.
 :::
 
+The citations for an entry in the [Classified Compilation](classified_compilation.md) can be shown with the following URL (example for the Federal Constitution): https://www.fedlex.admin.ch/eli/cc/1999/404/de/quotes. These pages are only available in German, French, and Italian.
+
 ## From and To
 
 A citation *from* means the citing resource whereas *to* means the cited resource. So if a legislative resource cites the Federal Constitution, the citation goes *from* this resource *to* the Federal Constitution.

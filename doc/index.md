@@ -91,6 +91,8 @@ The easiest way to have a graph like representation of a Fedlex URI (and not a r
 
 `https://fedlex.data.admin.ch/en-CH/metadata?value=https://fedlex.data.admin.ch/eli/cc/1999/404`
 
+The URLs given in this documentation are given without language identifier. In reality, there is no such URL as https://www.fedlex.admin.ch/eli/cc/1999/404 but only https://www.fedlex.admin.ch/eli/cc/1999/404/en or with other language identifiers like `de`, `fr`, `it` or `rm` in the end. But there is a redirection mechanism in place that automatically redirects to the correct language URL according to browser settings if no language identifier is given.
+
 ## Namespaces Declarations
 
 The following namespaces are used throughout this documentation:
