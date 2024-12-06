@@ -9,19 +9,29 @@ On the abstraction level of [jolux:Work](#Work), the following dates are importa
 :::{admonition} jolux:publicationDate
 :class: note
 :name: publicationDate
-The property jolux:publicationDate denotes the publication date of the law.
+The property jolux:publicationDate denotes the date of first publication in one of the collections. If the same document is republished, this date does not change: it is always the date of the initial publication that is decisive.
+
+On the other hand, for consolidations, several publication dates may exist: each new publication of the file generates a new date.
 :::
 
 :::{admonition} jolux:dateEntryInForce
 :class: note
 :name: dateEntryInForce
-The property jolux:dateEntryInForce denotes the date of entry into force of the law.
+The property jolux:dateEntryInForce denotes the date on which the law takes legal effect.
+:::
+
+:::{admonition} jolux:dateNoLongerInForce
+:class: note
+:name: dateNoLongerInForce
+The property jolux:dateNoLongerInForce denotes the date on which the law stops to have a legal effect.
 :::
 
 :::{admonition} jolux:dateDocument
 :class: note
 :name: dateDocument
-The property jolux:dateDocument denotes the date of the decree of the law.
+The jolux:dateDocument property is used to indicate the decision date of an act, or the date on which the document was adopted.
+
+For bills, where there is no formal adoption date, the Document Date is used as the reference date.
 :::
 
 ## Dates relevant to jolux:Consolidation
@@ -29,7 +39,13 @@ The property jolux:dateDocument denotes the date of the decree of the law.
 :::{admonition} jolux:dateApplicability
 :class: note
 :name: dateApplicability
-The property jolux:dateApplicability denotes the date of the first applicability of the jolux:Consolidation.
+The property jolux:dateApplicability denotes the date from which a jolux:Consolidation takes effect.
+:::
+
+:::{admonition} jolux:dateEndApplicability
+:class: note
+:name: dateEndApplicability
+The property jolux:dateEndApplicability denotes the date from which a jolux:Consolidation or a jolux:ConsolidationAbstract no longer takes effect.
 :::
 
 ## Dates relevant to jolux:LegalResourceImpact
@@ -37,5 +53,5 @@ The property jolux:dateApplicability denotes the date of the first applicability
 :::{admonition} jolux:legalResourceImpactHasDateEntryInForce
 :class: note
 :name: legalResourceImpactHasDateEntryInForce
-The property jolux:legalResourceImpactHasDateEntryInForce denotes the date of the jolux:LegalResourceImpact.
+The property jolux:legalResourceImpactHasDateEntryInForce denotes the effective date of an jolux:LegalResourceImpact.
 :::

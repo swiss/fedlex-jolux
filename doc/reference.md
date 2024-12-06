@@ -21,7 +21,9 @@ Dates:
 
 - [dateApplicability](#dateApplicability)
 - [dateDocument](#dateDocument)
+- [dateEndApplicability](#dateEndApplicability)
 - [dateEntryInForce](#dateEntryInForce)
+- [dateNoLongerInForce](#dateNoLongerInForce)
 - [legalResourceImpactHasDateEntryInForce](#legalResourceImpactHasDateEntryInForce)
 - [publicationDate](#publicationDate)
 
