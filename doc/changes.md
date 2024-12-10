@@ -2,6 +2,8 @@
 
 The term **changes** is used to list all changes to a specific entry in the [Classified Compilation](classified_compilation.md) on the level of single articles.
 
+There is the possibility to see all changes of a specific entry in the [Classified Compilation](classified_compilation.md) in the web frontend by adding `/changes` to the URL of the entry. E.g. for seeing all the changes of the Federal Constitution (not available in English), the URL would be `https://www.fedlex.admin.ch/eli/cc/1999/404/de/changes`.
+
 Changes are extracted from [jolux:Impact](#Impact). There are two methods used to depict the concerned articles depending on the date of the change.
 
 ## Older Changes

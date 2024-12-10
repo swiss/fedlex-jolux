@@ -2,6 +2,8 @@
 
 The term **history** is used to list all legislative resources that are relevant for a specific entry in the [Classified Compilation](classified_compilation.md).
 
+There is the possibility to see all relevant events for a specific entry in the [Classified Compilation](classified_compilation.md) in the web frontend by adding `/history` to the URL of the entry. E.g. for seeing all the events for the Federal Constitution (not available in English), the URL would be `https://www.fedlex.admin.ch/eli/cc/1999/404/de/history`.
+
 There are different mechanisms how legislative resources can be relevant for the history:
 
 ## Draft

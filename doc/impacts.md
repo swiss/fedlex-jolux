@@ -85,7 +85,3 @@ SELECT DISTINCT ?act ?date WHERE {
   ?act jolux:dateEntryInForce ?date.
 } ORDER BY ?date
 ```
-
-## All Impacts for Entries in the Classified Compilation
-
-As jolux:LegalResourceImpact are the foundation for the [history](history.md) and [changes](changes.md) of a entry in the [Classified Compilation](classified_compilation.md), there is a visual representation for the jolux:LegalResourceImpact for a single entry in the Classified Compilation available by adding `/history` or `/changes` to the website URL of the Classified Compilation entry. For example, the history (no English version available) of the Federal Constitution can be found [here](https://www.fedlex.admin.ch/eli/cc/1999/404/de/history) and the changes (no English version available) [here](https://www.fedlex.admin.ch/eli/cc/1999/404/de/changes).
