@@ -76,6 +76,10 @@ SELECT * WHERE {
 LIMIT 10
 ```
 
+## SPARQL Tutorial for JOLux
+
+There is also a tutorial in the form of a *JupyterLite notebook* available that can be run in the browser. The main focus of this interactive tutorial are the SPARQL queries necessary to work with the Fedlex JOLux data. In the notebook, these queries can be directly executed and changed by the user. The tutorial is available [here](https://swiss.github.io/fedlex-sparql).
+
 ## Fedlex URI and URL
 
 All URI of Fedlex raw data resources start with: `https://fedlex.data.admin.ch/eli` whereas `eli` is an abbreviation for [European Legislation Identifier](https://eur-lex.europa.eu/content/help/eurlex-content/eli.html).
