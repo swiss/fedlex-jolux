@@ -25,8 +25,8 @@ The URI of an entry in the Official Compilation contains the following parts:
 
 - Standard namespace and path: `https://fedlex.data.admin.ch/eli/`
 - the part `oc/` denotes the Official Compilation, meaning that this URI identifies something that is part of the Official Compilation of the federal law
-- `YYYY/` is the year of the publication
-- `ID` an identifier that has no specific meaning
+- `YYYY/` is the year of the publication (for older acts this can just be a number from 1 to 63 and roman I to XI)
+- `ID` an identifier that has no specific meaning but is restarting every new year and for older entries, this can also be linked to the starting page number for each language (e.g. `https://fedlex.data.admin.ch/eli/oc/1/183_154_179`)
 
 ## General Structure
 
@@ -38,7 +38,7 @@ Every entry in the Official Compilation is of type jolux:Act.
 The owl:Class **jolux:Act** is used for entries in the Official Compilation and the Federal Gazette. It is of the same [abstraction level](abstraction_levels.md) as [jolux:Work](#Work) and all jolux:Act are also jolux:Work.
 :::
 
-For jolux:Act, the additional [abstraction levels](abstraction_levels.md) jolux:Expression and jolux:Manifestation are also available for all entries.
+For jolux:Act, the additional [abstraction levels](abstraction_levels.md) jolux:Expression and jolux:Manifestation are also available for all entries except some older ones (e.g. `https://fedlex.data.admin.ch/eli/oc/1/183_154_179`).
 
 The following figure shows the general structure of an entry in the Official Compilation:
 
@@ -51,7 +51,7 @@ General structure of an entry in the Official Compilation.
 
 As the jolux:Act is a very abstract representation of a legislative resource, there is e.g. no title of the law attached to the jolux:Act because this is something language specific and therefore added to the [jolux:Expression](#Expression) of the jolux:Act.
 
-As the Official Compilation is released in a weekly bulletin, all jolux:Act are part of such a bulletin via [jolux:isPartOf](#isPartOf):
+As the Official Compilation is released in a weekly bulletin, all jolux:Act are part of such a bulletin via [jolux:isPartOf](#isPartOf) and the bulletin itself is a type jolux:Memorial:
 
 :::{admonition} jolux:isPartOf
 :class: note
@@ -59,10 +59,18 @@ As the Official Compilation is released in a weekly bulletin, all jolux:Act are 
 The object property **jolux:isPartOf** is used to connect a [jolux:Act](#Act) to the weekly bulletin that it is part of.
 :::
 
+:::{admonition} jolux:Memorial
+:class: note
+:name: Memorial
+The owl:Class **jolux:Memorial** is used for the weekly bulletin that contains the new entries of the Official Compilation and for the Federal Gazette.
+:::
+
 ## Datatype Properties
 
 - [jolux:publicationDate](#publicationDate)
+- [jolux:dateEndApplicability](#dateEndApplicability)
 - [jolux:dateEntryInForce](#dateEntryInForce)
+- [jolux:dateNoLongerInForce](#dateNoLongerInForce)
 - [jolux:dateDocument](#dateDocument)
 
 ## Object Properties
