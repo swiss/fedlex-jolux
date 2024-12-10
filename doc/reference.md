@@ -44,6 +44,7 @@ Link to vocabulary entries:
 - [processType](#procedure-types)
 - [responsibilityOf](#legal-institution)
 - [typeDocument](#text-types)
+- [userFormat](#user-formats)
 
 Link to individuals:
 

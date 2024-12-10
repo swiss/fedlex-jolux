@@ -67,7 +67,7 @@ SELECT * WHERE {
     <https://fedlex.data.admin.ch/eli/oc/1999/404> jolux:isRealizedBy ?expression.
     ?expression jolux:language <http://publications.europa.eu/resource/authority/language/DEU>;
         jolux:isEmbodiedBy ?manifestation.
-    ?manifestation jolux:format <http://publications.europa.eu/resource/authority/file-type/PDF>;
+    ?manifestation jolux:userFormat <https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a>;
         jolux:isExemplifiedBy ?url.
 }
 ```
