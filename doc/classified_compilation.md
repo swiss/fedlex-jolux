@@ -30,6 +30,8 @@ The URI of an entry in the Classified Compilation contains the following parts:
 - `YYYY/` is the year of the publication
 - `ID` an identifier that has no specific meaning
 
+The `ID` part has no specific meaning but is following the basic act in the Official Compilation. So the URI of an entry in the Classified Compilation can be created by replacing the `oc` in the URI of the basic act with `cc`. E.g. the URI of the federal constitution in the Official Compilation is `https://fedlex.data.admin.ch/eli/oc/1999/404` and the URI of the federal constitution in the Classified Compilation is `https://fedlex.data.admin.ch/eli/cc/1999/404`. This does not hold true for cases where the base act is not part of the Official Compilation but of the Federal Gazette. In this case, the `fga` part is replaced by `cc` and a suffix `_fga` is appended to the `ID` part E.g. `https://fedlex.data.admin.ch/eli/fga/2012/1262` becomes `https://fedlex.data.admin.ch/eli/cc/2012/1262_fga`. There are other special cases like `https://fedlex.data.admin.ch/eli/cc/2012/136` is based on `https://fedlex.data.admin.ch/eli/fga/2008/1057`.
+
 ## General Structure
 
 Every entry in the Classified Compilation is of type jolux:ConsolidationAbstract.
@@ -52,7 +54,7 @@ The owl:Class **jolux:Consolidation** is used for versions that represent a jolu
 The different jolux:Consolidation are no "deltas" of the changes but always the complete state a the specific point in time.
 :::
 
-For jolux:Consolidation, the additional [abstraction levels](abstraction_levels.md) jolux:Expression and jolux:Manifestation are also available for all entries.
+For jolux:Consolidation, the additional [abstraction levels](abstraction_levels.md) jolux:Expression and jolux:Manifestation are usually also available for all entries. This excludes some older ones and those that are not yet published.
 
 The connection between jolux:Consolidation and jolux:ConsolidationAbstract is made with jolux:isMemberOf.
 
@@ -89,11 +91,14 @@ As the name Classified Compilation suggests, there is a classification scheme th
 
 - [jolux:dateEntryInForce](#dateEntryInForce)
 - [jolux:dateDocument](#dateDocument)
+- [jolux:dateNoLongerInForce](#dateNoLongerInForce)
+- [jolux:dateEndApplicability](#dateEndApplicability)
 
 ### jolux:Consolidation
 
 - [jolux:publicationDate](#publicationDate)
 - [jolux:dateApplicability](#dateApplicability)
+- [jolux:dateEndApplicability](#dateEndApplicability)
 
 ## Object Properties
 

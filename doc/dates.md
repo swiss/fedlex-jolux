@@ -24,6 +24,8 @@ The property jolux:dateEntryInForce denotes the date on which the law takes lega
 :class: note
 :name: dateNoLongerInForce
 The property jolux:dateNoLongerInForce denotes the date on which the law stops to have a legal effect.
+
+Compared to [jolux:dateEndApplicability](#dateEndApplicability) this denotes the first day where the jolux:work is no longer in force.
 :::
 
 :::{admonition} jolux:dateDocument
@@ -45,7 +47,9 @@ The property jolux:dateApplicability denotes the date from which a jolux:Consoli
 :::{admonition} jolux:dateEndApplicability
 :class: note
 :name: dateEndApplicability
-The property jolux:dateEndApplicability denotes the date from which a jolux:Consolidation or a jolux:ConsolidationAbstract no longer takes effect.
+The property jolux:dateEndApplicability denotes the date from which a jolux:Consolidation or a jolux:ConsolidationAbstract no longer takes effect. 
+
+Compared to [jolux:dateNoLongerInForce](#dateNoLongerInForce) this denotes the last day where the consolidation is applicable.
 :::
 
 ## Dates relevant to jolux:LegalResourceImpact
