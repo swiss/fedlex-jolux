@@ -1,8 +1,8 @@
-# Chronology
+# History
 
-The term **chronology** is used to list all legislative resources that are relevant for a specific entry in the [Classified Compilation](classified_compilation.md).
+The term **history** is used to list all legislative resources that are relevant for a specific entry in the [Classified Compilation](classified_compilation.md).
 
-There are different mechanisms how legislative resources can be relevant for the chronology:
+There are different mechanisms how legislative resources can be relevant for the history:
 
 ## Draft
 

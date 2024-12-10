@@ -9,7 +9,7 @@ official_compilation.md
 classified_compilation.md
 impacts.md
 subdivisions.md
-chronology.md
+history.md
 changes.md
 citations.md
 treaties.md

@@ -64,10 +64,10 @@ Link to individuals:
 
 - [Abstraction Levels](abstraction_levels.md)
 - [Changes](changes.md)
-- [Chronology](chronology.md)
 - [Citations](citations.md)
 - [Classified Compilation (CC)](classified_compilation.md)
 - [Dates](dates.md)
+- [History](history.md)
 - [Impacts](impacts.md)
 - [Official Compilation (OC)](official_compilation.md)
 - [Subdivisions](subdivisions.md)
