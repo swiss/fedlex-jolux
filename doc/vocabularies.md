@@ -114,6 +114,30 @@ SELECT ?term ?label WHERE {
 }
 ```
 
+## Countries
+
+:::{admonition} Countries
+:class: important
+:name: countries
+- URI: https://fedlex.data.admin.ch/vocabulary/country
+- Description: The **countries** vocabulary is used to link to a specific country.
+- Predicates: jolux:treatyPartyCountry
+- [Metadata viewer](https://fedlex.data.admin.ch/de-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Fcountry)
+:::
+
+The following SPARQL query shows all the entries of this vocabulary with its labels:
+
+```sparql
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
+SELECT ?term ?label WHERE {
+    ?term skos:inScheme <https://fedlex.data.admin.ch/vocabulary/country>;
+        skos:prefLabel ?label.
+    FILTER NOT EXISTS {?term a skos:Collection}
+    FILTER (lang(?label) = "en")
+}
+```
+
 ## Enforcement Status
 
 :::{admonition} Enforcement Status
@@ -366,6 +390,54 @@ SELECT (GROUP_CONCAT(CONCAT(STR(?endpoint_level), ": ", STR(?endpoint_label)); s
         }
     } ORDER BY ?intermediate ?endpoint_level
 } GROUP BY ?intermediate ORDER BY ?hierarchy
+```
+
+## Treaty Subject Themes
+
+:::{admonition} Treaty Subject Themes
+:class: important
+:name: treaty-subject-themes
+- URI: https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme
+- Description: The **treaty subject themes** vocabulary is used to classify the subject of a [jolux:TreatyProcess](#TreatyProcess).
+- Predicates: jolux:treatySubject
+- [Metadata viewer](https://fedlex.data.admin.ch/de-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Ftreaty-subject-theme)
+:::
+
+The following SPARQL query shows all the entries of this vocabulary with its labels (only in German because there are no English labels):
+
+```sparql
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
+SELECT ?term ?label WHERE {
+  ?term skos:inScheme <https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme>;
+        skos:prefLabel ?label.
+  FILTER NOT EXISTS {?term a skos:Collection}
+  FILTER (lang(?label) = "de")
+}
+```
+
+## Treaty Types
+
+:::{admonition} Treaty Types
+:class: important
+:name: treaty-types
+- URI: https://fedlex.data.admin.ch/vocabulary/treaty-type
+- Description: The **treaty types** vocabulary is used to classify the type of a [jolux:TreatyProcess](#TreatyProcess).
+- Predicates: jolux:treatyType
+- [Metadata viewer](https://fedlex.data.admin.ch/de-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Ftreaty-type)
+:::
+
+The following SPARQL query shows all the entries of this vocabulary with its labels (only in German because there are no English labels):
+
+```sparql
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
+SELECT ?term ?label WHERE {
+  ?term skos:inScheme <https://fedlex.data.admin.ch/vocabulary/treaty-type>;
+        skos:prefLabel ?label.
+  FILTER NOT EXISTS {?term a skos:Collection}
+  FILTER (lang(?label) = "de")
+}
 ```
 
 ## User Formats
