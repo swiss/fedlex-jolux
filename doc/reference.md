@@ -13,6 +13,9 @@ The following terms are all to be understood as prefixed with `jolux:`, so the f
 - [LegalResourceImpact](#LegalResourceImpact)
 - [LegalResourceSubdivision](#LegalResourceSubdivision)
 - [Manifestation](#Manifestation)
+- [TaskForTreaty](#TaskForTreaty)
+- [TreatyDocument](#TreatyDocument)
+- [TreatyProcess](#TreatyProcess)
 - [Work](#Work)
 
 ## JOLux Datatype Properties
@@ -29,7 +32,11 @@ Dates:
 
 Others:
 
+- [bilateral](#bilateral)
 - [impactToLegalResourceComment](#impactToLegalResourceComment)
+- [treatySignatureDate](#treatySignatureDate)
+- [treatySignaturePlace](#treatySignaturePlace)
+- [titleTreaty](#titleTreaty)
 
 ## JOLux Object Properties
 
@@ -43,11 +50,15 @@ Link to vocabulary entries:
 - [legalResourceSubdivisionType](#subdivision-types)
 - [processType](#procedure-types)
 - [responsibilityOf](#legal-institution)
+- [treatyPartyCountry](#countries)
+- [treatySubject](#treaty-subject-themes)
+- [treatyType](#treaty-types)
 - [typeDocument](#text-types)
 - [userFormat](#user-formats)
 
 Link to individuals:
 
+- [approbationAct](#approbationAct)
 - [basicAct](#basicAct)
 - [citationFromLegalResource](#citationFromLegalResource)
 - [citationToLegalResource](#citationToLegalResource)
@@ -60,6 +71,8 @@ Link to individuals:
 - [isPartOf](#isPartOf)
 - [isRealizedBy](#isRealizedBy)
 - [legalResourceSubdivisionIsPartOf](#legalResourceSubdivisionIsPartOf)
+- [treatyProcessHasResultingTreatyDocument](#treatyProcessHasResultingTreatyDocument)
+- [treatyProcessHasTask](#treatyProcessHasTask)
 
 ## Concepts
 
