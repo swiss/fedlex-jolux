@@ -16,7 +16,7 @@ The property jolux:publicationDate denotes the date of first publication in one 
 
 :::{admonition} Hint for legal laypersons
 :class: hint
-During introduction of a new law, there are two similar but different dates relevant: the date of the **entry into force** and the date of the **applicability** of the law. These two dates can differ. Usually the entry into force comes first but the law is not applicable immediately. The law can be applicable only after a certain period of time. During this period of time there could be some transitional provisions that are applicable. But there are also cases where the law is applicable before the entry into force.
+During introduction of a new law, there are two similar but different dates relevant: the date of the **entry into force** and the date of the **applicability** of the law. These two dates can differ. It can happen that the entry into force comes before the law is applicable. This is mainly to allow for preparing the necessary changes in the affected organizations. During this period of time there could be some transitional provisions in place.
 :::
 
 :::{admonition} jolux:dateEntryInForce
@@ -33,7 +33,7 @@ The property jolux:dateApplicability denotes the date from which a law is applic
 
 :::{admonition} Hint for legal laypersons
 :class: hint
-During cancellation of a law, there are two similar but different dates relevant: the date of the **end of applicability** and the date of the **no longer in force**. Usually, the end of applicability is the last day where the law is applicable. The law is no longer in force the day after the end of applicability.
+During cancellation of a law, there are two similar but different dates relevant: the date of the **end of applicability** and the date of the **no longer in force**. The end of applicability is the last day where the law is applicable. The no longer in force date is the first day that the law has no more a legal effect. These two dates can differ in both direction. It could be that the law is first no more applicable and no longer in force later or vice versa.
 :::
 
 :::{admonition} jolux:dateEndApplicability
@@ -53,5 +53,5 @@ The property jolux:dateNoLongerInForce denotes the first day on which the law ha
 :::{admonition} jolux:legalResourceImpactHasDateEntryInForce
 :class: note
 :name: legalResourceImpactHasDateEntryInForce
-The property jolux:legalResourceImpactHasDateEntryInForce denotes the effective date of an jolux:LegalResourceImpact.
+The property jolux:legalResourceImpactHasDateEntryInForce denotes the effective date of an [jolux:LegalResourceImpact](#LegalResourceImpact).
 :::
