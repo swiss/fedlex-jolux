@@ -38,6 +38,7 @@ html_theme = 'sphinx_book_theme'
 html_theme_options = {
     "repository_url": "https://github.com/swiss/fedlex-jolux",
     "path_to_docs": "doc",
+    "use_download_button": False,
     "use_repository_button": True,
     "use_source_button": True,
     "use_edit_page_button": True,
@@ -48,13 +49,21 @@ html_theme_options = {
         "image_dark": "img/logo-ch.svg",
         "link": "https://swiss.github.io/fedlex-jolux"
     },
-    "navigation_depth": 2
+    "navigation_depth": 2,
+    "icon_links": [
+        {
+            "name": "Download as PDF",
+            "url": "https://raw.githubusercontent.com/swiss/jolux/gh-pages/pdf/jolux.pdf",
+            "icon": "fa-solid fa-file-pdf"
+        }
+    ]
 }
 
 html_static_path = ['_static']
 
 rinoh_documents = [dict(doc='index',
                         target='jolux')]
+
 
 
 # add custom js for sparql link generation
