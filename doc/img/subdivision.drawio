@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e" scale="3" border="10">
     <diagram id="bZ5vdFED0HxuOj-mL_6w" name="Page-1">
-        <mxGraphModel dx="619" dy="457" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="591" dy="1187" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -17,7 +17,7 @@
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="47" value="&lt;b&gt;Subdivision&lt;br&gt;Type&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;comic=0;strokeColor=#000000;strokeWidth=2;fillColor=#D1E5F0;gradientColor=none;fontSize=14;fontColor=#000000;align=center;" parent="1" vertex="1">
+                <mxCell id="47" value="&lt;b&gt;Subdivision&lt;br&gt;Type&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;comic=0;strokeColor=#000000;strokeWidth=2;fillColor=#E6FFCC;gradientColor=none;fontSize=14;fontColor=#000000;align=center;" parent="1" vertex="1">
                     <mxGeometry x="480" y="400" width="120" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="48" value="&lt;span style=&quot;background-color: rgb(209, 229, 240);&quot;&gt;legalResourceSubdivisionType&amp;nbsp;&lt;/span&gt;" style="endArrow=block;html=1;strokeColor=#000000;fontSize=14;fontColor=#000000;endFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="40" target="47" edge="1">
