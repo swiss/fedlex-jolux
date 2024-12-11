@@ -123,7 +123,7 @@ The object property **jolux:approbationAct** links a jolux:TreatyProcess to a jo
 Object properties that point to a vocabulary entry:
 
 - [jolux:treatySubject](#treaty-subject-themes)
-- [jolux:treatyType](#treaty-type)
+- [jolux:treatyType](#treaty-types)
 - [jolux:treatyPartyCountry](#countries)
 - [jolux:classifiedByTaxonomyEntry](#legal-taxonomy)
 
