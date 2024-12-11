@@ -85,7 +85,7 @@ The tasks are linked to the process via jolux:treatyProcessHasTask.
 The object property **jolux:treatyProcessHasTask** links a jolux:TreatyProcess to a jolux:TaskForTreaty.
 :::
 
-The possible types of tasks are given in the section [SPARQL Example](#sparql-example).
+The possible types of tasks are given in the section [SPARQL Example](#sparql-examples).
 
 The result of an international treaty is always a jolux:TreatyDocument.
 
