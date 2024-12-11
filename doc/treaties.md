@@ -147,3 +147,25 @@ SELECT DISTINCT ?class WHERE {
 ```
 
 The class jolux:Event is filtered because all jolux:TaskForTreaty are also jolux:Event.
+
+The following SPARQL query shows the 100 newest treaties that have an English title with the approbation act if available:
+
+```sparql
+PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
+SELECT * WHERE {
+
+  ?treaty_process a jolux:TreatyProcess;
+                  jolux:treatySignatureDate ?date;
+                  jolux:titleTreaty ?title.
+  
+  OPTIONAL {
+    ?treaty_process jolux:approbationAct ?act.
+  }
+  
+  FILTER(lang(?title) = "en")
+  FILTER(?title != ""@en)
+  
+} 
+ORDER BY DESC(?date)
+LIMIT 100
+```
