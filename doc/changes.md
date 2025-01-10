@@ -18,7 +18,7 @@ The datatype property **jolux:impactToLegalResourceComment** lists the impacted 
 
 ## Newer Changes
 
-For newer changes, the impacted articles are modelled as [jolux:LegalResourceSubdivision](#LegalResourceSubdivision).
+For newer changes, the impacted articles are modelled as [jolux:LegalResourceSubdivision](#LegalResourceSubdivision) and connected via [jolux:impactToLegalResource](#impactToLegalResource).
 
 ## SPARQL Examples
 
