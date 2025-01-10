@@ -8,6 +8,8 @@ The following terms are all to be understood as prefixed with `jolux:`, so the f
 - [Citation](#Citation)
 - [Consolidation](#Consolidation)
 - [ConsolidationAbstract](#ConsolidationAbstract)
+- [Consultation](#Consultation)
+- [ConsultationTask](#ConsultationTask)
 - [Draft](#Draft)
 - [Expression](#Expression)
 - [LegalResourceImpact](#LegalResourceImpact)
@@ -43,6 +45,7 @@ Others:
 Link to vocabulary entries:
 
 - [classifiedByTaxonomyEntry](#legal-taxonomy)
+- [foreseenImpactToLegalResource](#foreseenImpactToLegalResource)
 - [historicalTypeDocument](#text-types)
 - [inForceStatus](#enforcement-status)
 - [informationSource](#information-sources)
@@ -63,6 +66,7 @@ Link to individuals:
 - [basicAct](#basicAct)
 - [citationFromLegalResource](#citationFromLegalResource)
 - [citationToLegalResource](#citationToLegalResource)
+- [hasSubTask](#hasSubTask)
 - [impactConsolidatedBy](#impactConsolidatedBy)
 - [impactFromLegalResource](#impactFromLegalResource)
 - [impactToLegalResource](#impactToLegalResource)

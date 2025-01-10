@@ -14,6 +14,7 @@ subdivisions.md
 history.md
 changes.md
 citations.md
+consultations.md
 treaties.md
 vocabularies.md
 dates.md
