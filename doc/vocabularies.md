@@ -186,6 +186,30 @@ SELECT ?term ?label WHERE {
 }
 ```
 
+## Information Sources
+
+:::{admonition} Information Sources
+:class: important
+:name: information-sources
+- URI: https://fedlex.data.admin.ch/vocabulary/information-source
+- Description: The **information sources** vocabulary is used to give the information source of a jolux:LegalResourceImpact.
+- Predicates: jolux:informationSource
+- [Metadata viewer](https://fedlex.data.admin.ch/en-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Finformation-source)
+:::
+
+The following SPARQL query shows all the entries of this vocabulary with its labels:
+
+```sparql
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
+SELECT ?term ?label WHERE {
+    ?term skos:inScheme <https://fedlex.data.admin.ch/vocabulary/information-source>;
+        skos:prefLabel ?label.
+    FILTER NOT EXISTS {?term a skos:Collection}
+    FILTER (lang(?label) = "en")
+}
+```
+
 ## Legal Institution
 
 :::{admonition} Legal Institution

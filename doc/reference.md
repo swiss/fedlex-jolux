@@ -45,6 +45,7 @@ Link to vocabulary entries:
 - [classifiedByTaxonomyEntry](#legal-taxonomy)
 - [historicalTypeDocument](#text-types)
 - [inForceStatus](#enforcement-status)
+- [informationSource](#information-sources)
 - [legalRessourceGenre](#act-types)
 - [legalResourceImpactHasType](#impact-types)
 - [legalResourceSubdivisionType](#subdivision-types)
