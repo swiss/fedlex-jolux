@@ -158,7 +158,7 @@ SELECT ?term ?label WHERE {
     ?term skos:inScheme <https://fedlex.data.admin.ch/vocabulary/draft-document-type>;
         skos:prefLabel ?label.
     FILTER NOT EXISTS {?term a skos:Collection}
-    FILTER (lang(?label) = "en")
+    FILTER (lang(?label) = "de")
 }
 ```
 
