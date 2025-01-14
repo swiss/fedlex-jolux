@@ -2,6 +2,22 @@
 
 Concerning legislation, there are a number of dates that are important during the legislative process. All the date literals are modelled with datatype `xsd:date`. The following list tries to give the most important date properties according the lifetime of a legal resource.
 
+## Creation of Legislative Resources
+
+:::{admonition} jolux:eventStartDate
+:class: note
+:name: eventStartDate
+The property jolux:eventStartDate is used to indicate the start date of a legislative process (e.g. [jolux:Consultation](#Consultation)).
+:::
+
+:::{admonition} jolux:eventEndDate
+:class: note
+:name: eventEndDate
+The property jolux:eventEndDate is used to indicate the end date of a legislative process (e.g. [jolux:Consultation](#Consultation)).
+:::
+
+## Legislative Resources
+
 :::{admonition} jolux:dateDocument
 :class: note
 :name: dateDocument

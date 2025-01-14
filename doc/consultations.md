@@ -1,10 +1,5 @@
 # Consultations
 
-:::{admonition} Under construction
-:class: danger
-This sub-page is under construction...
-:::
-
 A *consultation* is the process of asking for feedback on a draft of a legislative resource.
 
 ## Example
@@ -94,6 +89,23 @@ The following figure shows the structure of the jolux:ConsultationPhase:
 Structure of a jolux:ConsultationPhase. There are multiple documents of type jolux:DraftRelatedDocument.
 :::
 
+The most important properties for a jolux:ConsultationPhase are:
+
+- jolux:opinionIsAboutDraftDocument
+- jolux:opinionHasDraftRelatedDocument
+
+:::{admonition} jolux:opinionIsAboutDraftDocument
+:class: note
+:name: opinionIsAboutDraftDocument
+The property **jolux:opinionIsAboutDraftDocument** is used to connect the actual consultation document to the jolux:ConsultationPhase.
+:::
+
+:::{admonition} jolux:opinionHasDraftRelatedDocument
+:class: note
+:name: opinionHasDraftRelatedDocument
+The property **jolux:opinionHasDraftRelatedDocument** is used to connect the accompanying documents to the different jolux:ConsultationTask (e.g. jolux:ConsultationPhase).
+:::
+
 All the jolux:DraftRelatedDocument from the jolux:ConsultationPhase have a jolux:draftProcessDocumentType that has the supercategory https://fedlex.data.admin.ch/vocabulary/draft-document-type/10
 
 The most important documents of the jolux:ConsultationPhase have the following entries from the [draft document types vocabulary](#draft-document-types):
@@ -125,3 +137,103 @@ All the jolux:DraftRelatedDocument from the jolux:ResultOfAConsultationPublicati
 The most important document of the jolux:ResultOfAConsultationPublication has the following entry from the [draft document types vocabulary](#draft-document-types):
 
 - the results report: https://fedlex.data.admin.ch/vocabulary/draft-document-type/31
+
+## Datatype Properties
+
+### jolux:Consultation
+
+The [following SPARQL query](https://fedlex.data.admin.ch/de-CH/sparql#query=PREFIX+jolux%3A+%3Chttp%3A%2F%2Fdata.legilux.public.lu%2Fresource%2Fontology%2Fjolux%23%3E%0ASELECT+DISTINCT+%3Fp+WHERE+%7B%0A%0A%09%3Fcon+a+jolux%3AConsultation%3B%0A++++++%3Fp+%3Fo.%0A++%0A++FILTER(isLiteral(%3Fo))%0A%7D&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=%2Fsparqlendpoint&requestMethod=POST&tabTitle=Query&headers=%7B%7D&outputFormat=table) shows all different datatype properties for jolux:Consultation. These properties are self explanatory.
+
+### jolux:ConsultationTask
+
+- [jolux:eventEndDate](#eventEndDate)
+- [jolux:eventStartDate](#eventStartDate)
+
+## Object Properties
+
+### jolux:Consultation
+
+Object properties that point to a vocabulary entry:
+
+- [jolux:consultationStatus](#consultation-status)
+- [jolux:isOpinionOf](#legal-institution)
+
+Object properties that point to an individual:
+
+- [jolux:foreseenImpactToLegalResource](#foreseenImpactToLegalResource)
+- [jolux:hasSubTask](#hasSubTask)
+
+### jolux:ConsultationTask
+
+Object properties that point to a vocabulary entry:
+
+- [jolux:institutionInChargeOfTheEvent](#legal-institution)
+- [jolux:institutionInChargeOfTheEventLevel2](#legal-institution)
+
+Object properties that point to an individual:
+
+- [jolux:opinionHasDraftRelatedDocument](#opinionHasDraftRelatedDocument)
+- [jolux:opinionIsAboutDraftDocument](#opinionIsAboutDraftDocument)
+
+## SPARQL Examples
+
+The following SPARQL query shows all the jolux:Consultation with their title in French that have a foreseen impact to the federal constitution:
+
+```sparql
+PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
+SELECT * WHERE {
+
+    ?consultation a jolux:Consultation;
+        jolux:foreseenImpactToLegalResource <https://fedlex.data.admin.ch/eli/cc/1999/404>;
+        jolux:eventTitle ?title.
+  
+    FILTER(lang(?title) = "fr")
+}
+```
+
+The following SPARQL query shows all the planned consultations and the one that are in preparation with their title in German:
+
+```sparql
+PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
+SELECT * WHERE {
+
+	?consultation a jolux:Consultation;
+        jolux:eventTitle ?title;
+        jolux:consultationStatus ?status.
+  
+  VALUES ?status {
+    <https://fedlex.data.admin.ch/vocabulary/consultation-status/0>
+    <https://fedlex.data.admin.ch/vocabulary/consultation-status/1>
+  }
+   
+  FILTER(lang(?title) = "de")
+  }
+```
+
+The following SPARQL query gives the links to the Italian result reports of the 10 last closed consultations.
+
+```sparql
+PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
+SELECT ?title ?date ?url WHERE {
+
+	?consultation a jolux:Consultation;
+        jolux:eventTitle ?title;
+        jolux:hasSubTask ?result_phase, ?consultation_phase.
+  
+    FILTER(lang(?title) = "it")
+
+    ?result_phase a jolux:ResultOfAConsultationPublication;
+        jolux:opinionHasDraftRelatedDocument ?result.
+    ?result jolux:draftProcessDocumentType <https://fedlex.data.admin.ch/vocabulary/draft-document-type/31>;
+        jolux:isRealizedBy ?expression.
+    ?expression jolux:language <http://publications.europa.eu/resource/authority/language/ITA>;
+        jolux:isEmbodiedBy ?manifestation.
+    ?manifestation jolux:userFormat <https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a>;
+        jolux:isExemplifiedBy ?url.
+    
+    ?consultation_phase a jolux:ConsultationPhase;
+          jolux:eventEndDate ?date.
+
+} ORDER BY DESC(?date)
+LIMIT 10
+```

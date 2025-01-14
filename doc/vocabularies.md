@@ -114,6 +114,30 @@ SELECT ?term ?label WHERE {
 }
 ```
 
+## Consultation Status
+
+:::{admonition} Consultation Status
+:class: important
+:name: consultation-status
+- URI: https://fedlex.data.admin.ch/vocabulary/consultation-status
+- Description: The **consultation status** vocabulary is used to classify the current status of a [jolux:Consultation](#Consultation).
+- Predicates: jolux:consultationStatus
+- [Metadata viewer](https://fedlex.data.admin.ch/en-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Fconsultation-status)
+:::
+
+The following SPARQL query shows all the entries of this vocabulary with its labels:
+
+```sparql
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
+SELECT ?term ?label WHERE {
+    ?term skos:inScheme <https://fedlex.data.admin.ch/vocabulary/consultation-status>;
+        skos:prefLabel ?label.
+    FILTER NOT EXISTS {?term a skos:Collection}
+    FILTER (lang(?label) = "en")
+}
+```
+
 ## Countries
 
 :::{admonition} Countries
@@ -262,7 +286,7 @@ SELECT ?term ?label WHERE {
 :name: legal-institution
 - URI: https://fedlex.data.admin.ch/vocabulary/legal-institution
 - Description: The **legal institution** vocabulary is used to add the responsibility of an institution for [jolux:Act](#Act).
-- Predicates: jolux:responsibilityOf
+- Predicates: jolux:responsibilityOf, jolux:isOpinionOf, jolux:jolux:institutionInChargeOfTheEvent, jolux:institutionInChargeOfTheEventLevel2
 - [Metadata viewer](https://fedlex.data.admin.ch/en-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Flegal-institution)
 :::
 
