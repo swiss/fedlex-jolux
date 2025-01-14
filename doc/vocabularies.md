@@ -407,7 +407,7 @@ SELECT (GROUP_CONCAT(CONCAT(STR(?endpoint_level), ": ", STR(?endpoint_label)); s
         FILTER(lang(?endpoint_label) = "de")
         {
             SELECT ?endpoint (COUNT(?endpoint) as ?endpoint_level) WHERE {
-                BIND (<https://fedlex.data.admin.ch/vocabulary/consultation-stage> as ?root)
+                BIND (<https://fedlex.data.admin.ch/vocabulary/subdivision-type> as ?root)
                 ?root skos:hasTopConcept/skos:narrower* ?intermediate.
                 ?intermediate skos:narrower* ?endpoint.
             } GROUP BY ?endpoint ORDER BY ?endpoint_level
