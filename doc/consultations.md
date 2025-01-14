@@ -59,7 +59,7 @@ The object property **jolux:hasSubTask** is used to connect a [jolux:Consultatio
 
 The following figure shows the general structure of a consultation:
 
-:::{figure-md} consultation
+:::{figure-md} fig_consultation
 
 <img src="img/consultation.png">
 
@@ -87,7 +87,7 @@ The owl:Class **jolux:ConsultationPhase** is used to form the actual object of t
 
 The following figure shows the structure of the jolux:ConsultationPhase:
 
-:::{figure-md} consultation
+:::{figure-md} fig_consultation_phase
 
 <img src="img/consultation_phase.png">
 
