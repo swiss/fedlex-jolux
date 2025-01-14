@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e" scale="3" border="0">
     <diagram id="h7V4RA7DcOEq5TIRYPrX" name="Page-1">
-        <mxGraphModel dx="839" dy="856" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="645" dy="856" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -15,10 +15,10 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="15" value="&lt;b&gt;DraftRelated&lt;br&gt;Document&lt;br&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;comic=0;strokeColor=#000000;strokeWidth=2;fillColor=#67A9CF;gradientColor=none;fontSize=14;fontColor=#000000;align=center;" parent="1" vertex="1">
-                    <mxGeometry x="360" y="520" width="120" height="120" as="geometry"/>
+                    <mxGeometry x="400" y="520" width="120" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="21" value="&lt;b&gt;Draft&lt;br&gt;Document&lt;br&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;comic=0;strokeColor=#000000;strokeWidth=2;fillColor=#67A9CF;gradientColor=none;fontSize=14;fontColor=#000000;align=center;" parent="1" vertex="1">
-                    <mxGeometry x="360" y="320" width="120" height="120" as="geometry"/>
+                    <mxGeometry x="400" y="320" width="120" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="22" value="&lt;span style=&quot;background-color: rgb(209, 229, 240);&quot;&gt;opinionIs&lt;br&gt;AboutDraft&lt;br&gt;Document&lt;/span&gt;" style="endArrow=block;html=1;strokeColor=#000000;fontSize=14;fontColor=#000000;endFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="5" target="21" edge="1">
                     <mxGeometry x="0.0909" width="50" height="50" relative="1" as="geometry">
@@ -39,7 +39,7 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="24" value="&lt;span&gt;DraftProcess&lt;br&gt;DocumentType&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;comic=0;strokeColor=#000000;strokeWidth=2;fillColor=#E6FFCC;gradientColor=none;fontSize=14;fontColor=#000000;align=center;fontStyle=1" vertex="1" parent="1">
-                    <mxGeometry x="600" y="520" width="120" height="120" as="geometry"/>
+                    <mxGeometry x="680" y="520" width="120" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="27" value="&lt;span style=&quot;background-color: rgb(209, 229, 240);&quot;&gt;draftProcess&lt;br&gt;DocumentType&lt;/span&gt;" style="endArrow=block;html=1;strokeColor=#000000;fontSize=14;fontColor=#000000;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="21" target="28">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -49,7 +49,7 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="28" value="&lt;b&gt;DraftProcess&lt;br&gt;DocumentType&lt;br&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;comic=0;strokeColor=#000000;strokeWidth=2;fillColor=#E6FFCC;gradientColor=none;fontSize=14;fontColor=#000000;align=center;" vertex="1" parent="1">
-                    <mxGeometry x="600" y="320" width="120" height="120" as="geometry"/>
+                    <mxGeometry x="680" y="320" width="120" height="120" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
