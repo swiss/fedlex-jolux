@@ -14,7 +14,7 @@ The following figure shows the general structure of a citation:
 
 <img src="img/citation.png">
 
-General structure of a citation.
+General structure of a citation. The dashed lines mean either one of the outgoing connections can be set.
 :::
 
 The citations for an entry in the [Classified Compilation](classified_compilation.md) can be shown with the following URL (example for the Federal Constitution): https://www.fedlex.admin.ch/eli/cc/1999/404/de/quotes. These pages are only available in German, French, and Italian.
@@ -35,7 +35,9 @@ The object property **jolux:citationFromLegalResource** is used to connect a [jo
 The object property **jolux:citationToLegalResource** is used to connect a [jolux:Citation](#Citation) to a [jolux:LegalResourceSubdivision](#LegalResourceSubdivision) that is the **cited** document.
 :::
 
-## SPARQL Example
+The Citation can either go from a [jolux:Act](#Act) or a [jolux:Consolidation](#Consolidation) to another [jolux:Act](#Act) or [jolux:ConsolidationAbstract](#ConsolidationAbstract). All combinations are possible. But on the *to* side, there is no direct [jolux:Consultation](#Consultation) possible, so if the cited resource is in the [Classified Compilation](classified_compilation.md), it is always the [jolux:ConsolidationAbstract](#ConsolidationAbstract) that is cited.
+
+## SPARQL Examples
 
 The following SPARQL query shows all the [jolux:ConsolidationAbstract](#ConsolidationAbstract) with its German titles that cite the Federal Constitution:
 
@@ -50,4 +52,17 @@ SELECT * WHERE {
   ?expressionFrom jolux:language <http://publications.europa.eu/resource/authority/language/DEU>;
               jolux:title ?titleFrom.
 }
+```
+
+The following SPARQL query shows the first 100 [jolux:Citation](#Citation) between two [jolux:Act](#Act):
+
+```sparql
+PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT * WHERE {
+    ?citation a jolux:Citation;
+  	    jolux:citationFromLegalResource/jolux:legalResourceSubdivisionIsPartOf/rdf:type jolux:Act;
+	    jolux:citationToLegalResource/jolux:legalResourceSubdivisionIsPartOf/rdf:type jolux:Act.
+}
+limit 100
 ```
