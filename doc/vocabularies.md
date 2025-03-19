@@ -279,6 +279,15 @@ SELECT DISTINCT ?term ?label WHERE {
 }
 ```
 
+There is a special case where the predicate [jolux:informationSource](#information-sources) is used with a predicate that is not in the vocabulary. The following SPARQL query shows the first 100 entries with this object:
+
+```sparql
+PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
+SELECT DISTINCT * {
+    ?act jolux:informationSource <https://fedlex.data.admin.ch/vocabulary/information-source/data-from-ff-excel> .
+} LIMIT 100
+```
+
 ## Legal Institution
 
 :::{admonition} Legal Institution
