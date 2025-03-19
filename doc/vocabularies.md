@@ -106,7 +106,7 @@ The following SPARQL query shows all the entries of this vocabulary with its lab
 ```sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
-SELECT ?term ?label WHERE {
+SELECT DISTINCT ?term ?label WHERE {
     ?term a skos:Concept;
         skos:inScheme <https://fedlex.data.admin.ch/vocabulary/legal-resource-genre>;
         skos:prefLabel ?label.
@@ -130,7 +130,7 @@ The following SPARQL query shows all the entries of this vocabulary with its lab
 ```sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
-SELECT ?term ?label WHERE {
+SELECT DISTINCT ?term ?label WHERE {
     ?term a skos:Concept;
         skos:inScheme <https://fedlex.data.admin.ch/vocabulary/consultation-status>;
         skos:prefLabel ?label.
@@ -154,7 +154,7 @@ The following SPARQL query shows all the entries of this vocabulary with its lab
 ```sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
-SELECT ?term ?label WHERE {
+SELECT DISTINCT ?term ?label WHERE {
     ?term a skos:Concept;
         skos:inScheme <https://fedlex.data.admin.ch/vocabulary/country>;
         skos:prefLabel ?label.
@@ -178,7 +178,7 @@ The following SPARQL query shows all the entries of this vocabulary with its lab
 ```sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
-SELECT ?term ?label WHERE {
+SELECT DISTINCT ?term ?label WHERE {
     ?term a skos:Concept;
         skos:inScheme <https://fedlex.data.admin.ch/vocabulary/draft-document-type>;
         skos:prefLabel ?label.
@@ -223,7 +223,7 @@ The following SPARQL query shows all the entries of this vocabulary with its lab
 ```sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
-SELECT ?term ?label WHERE {
+SELECT DISTINCT ?term ?label WHERE {
     ?term a skos:Concept;
         skos:inScheme <https://fedlex.data.admin.ch/vocabulary/enforcement-status>;
         skos:prefLabel ?label.
@@ -247,7 +247,7 @@ The following SPARQL query shows all the entries of this vocabulary with its lab
 ```sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
-SELECT ?term ?label WHERE {
+SELECT DISTINCT ?term ?label WHERE {
     ?term a skos:Concept;
         skos:inScheme <https://fedlex.data.admin.ch/vocabulary/impact-type>;
         skos:prefLabel ?label.
@@ -271,7 +271,7 @@ The following SPARQL query shows all the entries of this vocabulary with its lab
 ```sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
-SELECT ?term ?label WHERE {
+SELECT DISTINCT ?term ?label WHERE {
     ?term a skos:Concept;
         skos:inScheme <https://fedlex.data.admin.ch/vocabulary/information-source>;
         skos:prefLabel ?label.
@@ -295,7 +295,7 @@ The following SPARQL query shows all the entries of this vocabulary with its lab
 ```sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
-SELECT ?term ?label WHERE {
+SELECT DISTINCT ?term ?label WHERE {
     ?term a skos:Concept;
         skos:inScheme <https://fedlex.data.admin.ch/vocabulary/legal-institution>;
         skos:prefLabel ?label.
@@ -340,7 +340,7 @@ The following SPARQL query shows all the entries of this vocabulary with its lab
 ```sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
-SELECT ?term ?label WHERE {
+SELECT DISTINCT ?term ?label WHERE {
     ?term a skos:Concept;
         skos:inScheme <https://fedlex.data.admin.ch/vocabulary/legal-taxonomy>;
         skos:prefLabel ?label.
@@ -387,7 +387,7 @@ The following SPARQL query shows all the entries of this vocabulary with its lab
 ```sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
-SELECT ?term ?label WHERE {
+SELECT DISTINCT ?term ?label WHERE {
     ?term a skos:Concept;
         skos:inScheme <https://fedlex.data.admin.ch/vocabulary/type-procedure>;
         skos:prefLabel ?label.
@@ -411,7 +411,7 @@ The following SPARQL query shows all the entries of this vocabulary with its lab
 ```sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
-SELECT ?term ?label WHERE {
+SELECT DISTINCT ?term ?label WHERE {
     ?term a skos:Concept;
         skos:inScheme <https://fedlex.data.admin.ch/vocabulary/subdivision-type>;
         skos:prefLabel ?label.
@@ -456,7 +456,7 @@ The following SPARQL query shows all the entries of this vocabulary with its lab
 ```sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
-SELECT ?term ?label WHERE {
+SELECT DISTINCT ?term ?label WHERE {
     ?term a skos:Concept;
         skos:inScheme <https://fedlex.data.admin.ch/vocabulary/resource-type>;
         skos:prefLabel ?label.
@@ -501,7 +501,7 @@ The following SPARQL query shows all the entries of this vocabulary with its lab
 ```sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
-SELECT ?term ?label WHERE {
+SELECT DISTINCT ?term ?label WHERE {
     ?term a skos:Concept;
         skos:inScheme <https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme>;
         skos:prefLabel ?label.
@@ -525,7 +525,7 @@ The following SPARQL query shows all the entries of this vocabulary with its lab
 ```sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
-SELECT ?term ?label WHERE {
+SELECT DISTINCT ?term ?label WHERE {
     ?term a skos:Concept;
         skos:inScheme <https://fedlex.data.admin.ch/vocabulary/treaty-type>;
         skos:prefLabel ?label.
@@ -549,7 +549,7 @@ The following SPARQL query shows all the entries of this vocabulary with its lab
 ```sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
-SELECT ?term ?label WHERE {
+SELECT DISTINCT ?term ?label WHERE {
     ?term a skos:Concept;
         skos:inScheme <https://fedlex.data.admin.ch/vocabulary/user-format>;
         skos:prefLabel ?label.
