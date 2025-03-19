@@ -35,7 +35,7 @@ The object property **jolux:citationFromLegalResource** is used to connect a [jo
 The object property **jolux:citationToLegalResource** is used to connect a [jolux:Citation](#Citation) to a [jolux:LegalResourceSubdivision](#LegalResourceSubdivision) that is the **cited** document.
 :::
 
-The Citation can either go from a [jolux:Act](#Act) or a [jolux:Consolidation](#Consolidation) to another [jolux:Act](#Act) or [jolux:ConsolidationAbstract](#ConsolidationAbstract). All combinations are possible. But on the *to* side, there is no direct [jolux:Consultation](#Consultation) possible, so if the cited resource is in the [Classified Compilation](classified_compilation.md), it is always the [jolux:ConsolidationAbstract](#ConsolidationAbstract) that is cited.
+The Citation can either go from a [jolux:Act](#Act) or a [jolux:Consolidation](#Consolidation) to another [jolux:Act](#Act) or [jolux:ConsolidationAbstract](#ConsolidationAbstract). All combinations are possible. But on the *to* side, there is no direct [jolux:Consolidation](#Consolidation) possible, so if the cited resource is in the [Classified Compilation](classified_compilation.md), it is always the [jolux:ConsolidationAbstract](#ConsolidationAbstract) that is cited.
 
 ## SPARQL Examples
 
