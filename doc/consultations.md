@@ -15,7 +15,7 @@ Throughout this sub-page, the following consultation with a possible impact on t
 The URI of a consultation contains the following parts:
 
 - Standard namespace and path: `https://fedlex.data.admin.ch/eli/`
-- the part `dl/proj` is used as path for all consultations
+- the part `dl/proj` is used as path for all consultations (dl stands for draft legislation and proj for project)
 - `YYYY/` is the year of the consultation
 - `ID` an identifier that has no specific meaning but restarts every year
 - `cons_1` is used for every consultation
