@@ -11,7 +11,7 @@ The webpage of this repository will be built on every commit via [GitHub Actions
 Please open [issues](https://github.com/swiss/fedlex-jolux/issues) on this repository or provide [pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) for contributions.
 
 > [!CAUTION]
-> 2024-11-22: This is an ongoing project between the Federal Chancellery and the [Institute for Public Sector Transformation](https://www.bfh.ch/en/research/research-areas/public-sector-transformation/) of the [Bern University of Applied Sciences](https://www.bfh.ch/en/). The content is not yet stable. Further updates will follow.
+> 2026-02-23: This is an ongoing project between the Federal Chancellery and the [Institute for Public Sector Transformation](https://www.bfh.ch/en/research/research-areas/public-sector-transformation/) of the [Bern University of Applied Sciences](https://www.bfh.ch/en/). The content is mainly stable. Some further updates will still follow.
 
 ## Local Build Instructions
 
