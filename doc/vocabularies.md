@@ -404,6 +404,54 @@ SELECT DISTINCT ?term ?label WHERE {
 }
 ```
 
+## Publication Completeness
+
+:::{admonition} Publication Completeness
+:class: important
+:name: publication-completeness
+- URI: https://fedlex.data.admin.ch/vocabulary/publication-completeness
+- Description: The **publication completeness** vocabulary is used to classify the completeness of a jolux:Act.
+- Predicates: jolux:legalResourcePublicationCompleteness
+- [Metadata viewer](https://fedlex.data.admin.ch/en-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Fpublication-completeness)
+:::
+
+The following SPARQL query shows all the entries of this vocabulary with its labels:
+
+```sparql
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
+SELECT DISTINCT ?term ?label WHERE {
+    ?term a skos:Concept;
+        skos:inScheme <https://fedlex.data.admin.ch/vocabulary/publication-completeness>;
+        skos:prefLabel ?label.
+    FILTER (lang(?label) = "en")
+}
+```
+
+## Resource Family
+
+:::{admonition} Resource Family
+:class: important
+:name: resource-family
+- URI: https://fedlex.data.admin.ch/vocabulary/resource-family
+- Description: The **resource family*** vocabulary is used to classify the type of a jolux:Act.
+- Predicates: jolux:legalResourceFamilyType
+- [Metadata viewer](https://fedlex.data.admin.ch/en-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Fresource-family)
+:::
+
+The following SPARQL query shows all the entries of this vocabulary with its German labels (no English labels available):
+
+```sparql
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
+SELECT DISTINCT ?term ?label WHERE {
+    ?term a skos:Concept;
+        skos:inScheme <https://fedlex.data.admin.ch/vocabulary/resource-family>;
+        skos:prefLabel ?label.
+    FILTER (lang(?label) = "de")
+}
+```
+
 ## Subdivision Types
 
 :::{admonition} Subdivision Types

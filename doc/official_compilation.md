@@ -30,15 +30,9 @@ The URI of an entry in the Official Compilation contains the following parts:
 
 ## General Structure
 
-Every entry in the Official Compilation is of type jolux:Act.
+Every entry in the Official Compilation is of type [jolux:Act](#Act).
 
-:::{admonition} jolux:Act
-:class: note
-:name: Act
-The owl:Class **jolux:Act** is used for entries in the Official Compilation and the Federal Gazette. It is of the same [abstraction level](abstraction_levels.md) as [jolux:Work](#Work) and all jolux:Act are also jolux:Work.
-:::
-
-For jolux:Act, the additional [abstraction levels](abstraction_levels.md) jolux:Expression and jolux:Manifestation are also available for all entries except some older ones (e.g. `https://fedlex.data.admin.ch/eli/oc/1/183_154_179`).
+For jolux:Act in the Official Compilation, the additional [abstraction levels](abstraction_levels.md) jolux:Expression and jolux:Manifestation are also available for all entries except some older ones (e.g. `https://fedlex.data.admin.ch/eli/oc/1/183_154_179`).
 
 The following figure shows the general structure of an entry in the Official Compilation:
 

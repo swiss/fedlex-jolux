@@ -7,6 +7,7 @@
 
 introduction.md
 abstraction_levels.md
+federal_gazette.md
 official_compilation.md
 classified_compilation.md
 impacts.md
