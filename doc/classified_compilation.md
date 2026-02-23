@@ -10,7 +10,7 @@ This part explains all the important objects that build an entry in the Classifi
 :class: hint
 Entries in the Classified Compilation are consolidations of entries in the Official Compilation. The main reason for having a Classified Compilation is a better usability of the legislative resources because the Classified Compilation represents the current state of a legislative resource.
 
-It is important to realize that the Classified Compilation is not legally binding, the source of the "true law" is always the Official Compilation.
+It is important to realize that the Classified Compilation is not legally binding, the source of the "true law" is always the [Official Compilation](official_compilation.md).
 :::
 
 ## Example
