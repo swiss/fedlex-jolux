@@ -41,7 +41,9 @@ Dates:
 Others:
 
 - [bilateral](#bilateral)
+- [draftId](#draftId)
 - [impactToLegalResourceComment](#impactToLegalResourceComment)
+- [parliamentDraftId](#parliamentDraftId)
 - [sequenceInTheYearOfPublication](#sequenceInTheYearOfPublication)
 - [treatySignatureDate](#treatySignatureDate)
 - [treatySignaturePlace](#treatySignaturePlace)
@@ -79,8 +81,10 @@ Link to individuals:
 - [basicAct](#basicAct)
 - [citationFromLegalResource](#citationFromLegalResource)
 - [citationToLegalResource](#citationToLegalResource)
+- [draftHasLegislativeTask](#draftHasLegislativeTask)
 - [opinionHasDraftRelatedDocument](#opinionHasDraftRelatedDocument)
 - [opinionIsAboutDraftDocument](#opinionIsAboutDraftDocument)
+- [hasResultingLegalResource](#hasResultingLegalResource)
 - [hasSubTask](#hasSubTask)
 - [impactConsolidatedBy](#impactConsolidatedBy)
 - [impactFromLegalResource](#impactFromLegalResource)
@@ -103,6 +107,7 @@ Link to individuals:
 - [Classified Compilation (CC)](classified_compilation.md)
 - [Consultations](consultations.md)
 - [Dates](dates.md)
+- [Drafts](drafts.md)
 - [Federal Gazette (BBl)](federal_gazette.md)
 - [History](history.md)
 - [Impacts](impacts.md)

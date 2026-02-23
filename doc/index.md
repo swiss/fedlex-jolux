@@ -10,6 +10,7 @@ abstraction_levels.md
 federal_gazette.md
 official_compilation.md
 classified_compilation.md
+drafts.md
 impacts.md
 subdivisions.md
 history.md
