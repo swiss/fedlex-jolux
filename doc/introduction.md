@@ -1,19 +1,23 @@
 
 # Introduction
 
-This introduction explains some key terms to understand the scope of its content and describes the structure of the webpage and how to use it.
+This introduction explains some key terms to understand the scope and structure of this webpage and shows how to use it.
 
 ## Fedlex
 
-The Swiss federal government operates the **Fedlex** platform to publish the **federal law**. This platform provides a [website](https://www.fedlex.admin.ch/en) as frontend with easy navigable functions. For some cases, it is beneficial to work directly with the raw data that is also the basis for the frontend website. This raw data is available in [RDF](https://www.w3.org/TR/rdf11-primer/) format through a [SPARQL GUI](https://fedlex.data.admin.ch/en-CH/sparql) and a SPARQL endpoint at `https://fedlex.data.admin.ch/sparqlendpoint`.
+The Swiss federal government operates the **Fedlex** platform to publish the **federal law**. This platform provides a [website](https://www.fedlex.admin.ch/en) as frontend with easy navigable functions for finding and reading the federal law.
+
+## Metadata and the Actual Text
+
+The data on the Fedlex platform can be divided into two main categories: the **metadata** and the **actual text** of the legal documents. The metadata contains all the information about a legal document that is not part of the actual text but is necessary to understand the context of the document, its relationships to other documents and its history. The actual text on the other hand, is the content of the legal document itself.
+
+The actual text of the legal documents is available in different formats (e.g. HTML, XML, PDF) through the website of Fedlex. Thereby, only the XML files contain the actual text as **structured data**. This machine readable data is modelled according to the [Akoma Ntoso](https://www.oasis-open.org/standard/akn-v1-0/) standard. But this is not part of the JOLux ontology and not the focus of this website.
 
 ## JOLux Ontology
 
-The raw data of the Fedlex platform in RDF is modelled according to the **JOLux ontology**. This ontology is used for describing **legislative resources and their relationships**.
+The metadata of all the legislative documents of the Fedlex platform is available as [RDF](https://www.w3.org/TR/rdf11-primer/) metadata that is modelled according to the **JOLux ontology**. This ontology is used for describing **legislative resources and their relationships**. JOLux is based on recent developments in bibliographical description, adapting the [FRBR model](https://repository.ifla.org/handle/123456789/811) (Functional requirements for Bibliographic Records, developed by the [IFLA](https://www.ifla.org/)) in order to describe legislative resources.
 
-JOLux is based on recent developments in bibliographical description, adapting the [FRBR model](https://repository.ifla.org/handle/123456789/811) (Functional requirements for Bibliographic Records, developed by the [IFLA](https://www.ifla.org/)) in order to describe legislative resources.
-
-This website's goal is to document the JOLux ontology and help users to find their way into the RDF data of the Fedlex platform and make the most use of it. It is not the basis for the JOLux ontology meaning that there is no completeness of all the aspects of JOLux in this documentation. So this website can not be used to model data according to the JOLux ontology but rather to understand data that is already modelled with help of JOLux. If complete insight into the JOLux ontology is necessary, it can be [downloaded](https://fedlex.data.admin.ch/filestore/resources/jolux_ontology.zip) as Turtle file for further investigation.
+This website's goal is to document the JOLux ontology and help users to find their way into the RDF metadata of the Fedlex platform and make the most use of it. It is not the basis for the JOLux ontology meaning that there is no completeness of all the aspects of JOLux in this documentation. So this website can not be used to model metadata according to the JOLux ontology but rather to understand metadata that is already modelled with help of JOLux. If complete insight into the JOLux ontology is necessary, it can be [downloaded](https://fedlex.data.admin.ch/filestore/resources/jolux_ontology.zip) as Turtle file for further investigation.
 
 ## How to Use this Website
 
