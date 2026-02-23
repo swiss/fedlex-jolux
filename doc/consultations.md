@@ -56,7 +56,7 @@ The following figure shows the general structure of a consultation:
 
 :::{figure-md} fig_consultation
 
-<img src="img/consultation.png">
+<img src="img/consultation.png" class="max-width-500">
 
 General structure of a consultation.
 :::
