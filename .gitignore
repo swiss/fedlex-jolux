@@ -1,5 +1,5 @@
 # Ignore virtual environment
-venv/
+.venv/
 
 # Ignore Sphinx build output
 _build/
