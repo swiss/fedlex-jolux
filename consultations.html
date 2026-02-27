@@ -1,0 +1,728 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Consultations &#8212; Fedlex-JOLux 0.1 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=b0813e71" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=e1a75a79"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/sparql_link.js?v=f695a40a"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'consultations';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="International Treaties" href="treaties.html" />
+    <link rel="prev" title="Citations" href="citations.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+     
+  
+
+<a class="navbar-brand logo" href="https://swiss.github.io/fedlex-jolux">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo-ch.svg" class="logo__image only-light" alt=""/>
+    <script>document.write(`<img src="_static/logo-ch.svg" class="logo__image only-dark" alt=""/>`);</script>
+  
+  
+    <p class="title logo__title">JOLux Ontology</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://raw.githubusercontent.com/swiss/jolux/gh-pages/pdf/jolux.pdf" title="Download as PDF" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-file-pdf fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Download as PDF</span></a>
+        </li>
+</ul></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Content</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="abstraction_levels.html">Abstraction Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="federal_gazette.html">Federal Gazette (BBl)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="official_compilation.html">Official Compilation (OC)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classified_compilation.html">Classified Compilation (CC)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drafts.html">Drafts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="impacts.html">Impacts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subdivisions.html">Subdivisions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="citations.html">Citations</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Consultations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="treaties.html">International Treaties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vocabularies.html">Vocabularies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dates.html">Dates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">Reference</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/swiss/fedlex-jolux" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/swiss/fedlex-jolux/blob/main/doc/consultations.md?plain=1" target="_blank"
+   class="btn btn-sm btn-source-file-button dropdown-item"
+   title="Show source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="btn__text-container">Show source</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/swiss/fedlex-jolux/edit/main/doc/consultations.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/swiss/fedlex-jolux/issues/new?title=Issue%20on%20page%20%2Fconsultations.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Consultations</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uri">URI</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-structure">General Structure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datatype-properties">Datatype Properties</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jolux-consultation">jolux:Consultation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jolux-consultationtask">jolux:ConsultationTask</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#object-properties">Object Properties</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">jolux:Consultation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">jolux:ConsultationTask</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sparql-examples">SPARQL Examples</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="consultations">
+<h1>Consultations<a class="headerlink" href="#consultations" title="Link to this heading">#</a></h1>
+<p>A <em>consultation</em> is the process of asking for feedback on a draft of a legislative resource.</p>
+<section id="example">
+<h2>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h2>
+<p>Throughout this sub-page, the following consultation with a possible impact on the federal constitution is used as an example:</p>
+<ul class="simple">
+<li><p>URI: <a class="reference external" href="https://fedlex.data.admin.ch/eli/dl/proj/2022/59/cons_1">https://fedlex.data.admin.ch/eli/dl/proj/2022/59/cons_1</a></p></li>
+<li><p>URL: <a class="reference external" href="https://www.fedlex.admin.ch/de/consultation-procedures/ended/2022#https://fedlex.data.admin.ch/eli/dl/proj/2022/59/cons_1">https://www.fedlex.admin.ch/de/consultation-procedures/ended/2022#https://fedlex.data.admin.ch/eli/dl/proj/2022/59/cons_1</a></p></li>
+<li><p><a class="reference external" href="https://fedlex.data.admin.ch/de-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Feli%2Fdl%2Fproj%2F2022%2F59%2Fcons_1">Metadata viewer</a></p></li>
+</ul>
+</section>
+<section id="uri">
+<h2>URI<a class="headerlink" href="#uri" title="Link to this heading">#</a></h2>
+<p>The URI of a consultation contains the following parts:</p>
+<ul class="simple">
+<li><p>Standard namespace and path: <code class="docutils literal notranslate"><span class="pre">https://fedlex.data.admin.ch/eli/</span></code></p></li>
+<li><p>the part <code class="docutils literal notranslate"><span class="pre">dl/proj</span></code> is used as path for all consultations (dl stands for draft legislation and proj for project)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">YYYY/</span></code> is the year of the consultation</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ID</span></code> an identifier that has no specific meaning but restarts every year</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cons_1</span></code> is used for every consultation</p></li>
+</ul>
+</section>
+<section id="general-structure">
+<h2>General Structure<a class="headerlink" href="#general-structure" title="Link to this heading">#</a></h2>
+<p>Every consultation is of type jolux:Consultation.</p>
+<div class="note admonition" id="consultation">
+<p class="admonition-title">jolux:Consultation</p>
+<p>The owl:Class <strong>jolux:Consultation</strong> is used for consultations.</p>
+</div>
+<p>A jolux:Consultation has a foreseen impact to a legislative resource. This is given by jolux:foreseenImpactToLegalResource:</p>
+<div class="note admonition" id="foreseenimpacttolegalresource">
+<p class="admonition-title">jolux:foreseenImpactToLegalResource</p>
+<p>The object property <strong>jolux:foreseenImpactToLegalResource</strong> is used to connect a <a class="reference internal" href="#consultation"><span class="std std-ref">jolux:Consultation</span></a> to a <a class="reference internal" href="abstraction_levels.html#work"><span class="std std-ref">jolux:Work</span></a> (usually a <a class="reference internal" href="classified_compilation.html#consolidationabstract"><span class="std std-ref">jolux:ConsolidationAbstract</span></a>).</p>
+</div>
+<p>The jolux:Consultation is structured into different jolux:ConsultationTask that are connected to the jolux:Consultation with the object property jolux:hasSubTask:</p>
+<div class="note admonition" id="consultationtask">
+<p class="admonition-title">jolux:ConsultationTask</p>
+<p>The owl:Class <strong>jolux:ConsultationTask</strong> is used for the different tasks of a jolux:Consultation.</p>
+</div>
+<div class="note admonition" id="hassubtask">
+<p class="admonition-title">jolux:hasSubTask</p>
+<p>The object property <strong>jolux:hasSubTask</strong> is used to connect a <a class="reference internal" href="#consultation"><span class="std std-ref">jolux:Consultation</span></a> to a <a class="reference internal" href="#consultationtask"><span class="std std-ref">jolux:ConsultationTask</span></a>.</p>
+</div>
+<p>The following figure shows the general structure of a consultation:</p>
+<figure class="align-default" id="fig-consultation">
+<img alt="_images/consultation.png" class="max-width-500" src="_images/consultation.png" />
+<figcaption>
+<p><span class="caption-text">General structure of a consultation.</span><a class="headerlink" href="#fig-consultation" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>There are four types of jolux:ConsultationTask:</p>
+<ul class="simple">
+<li><p>jolux:ConsultationPreparation</p></li>
+<li><p>jolux:ConsultationPhase</p></li>
+<li><p>jolux:PositionStatementPublication</p></li>
+<li><p>jolux:ResultOfAConsultationPublication</p></li>
+</ul>
+<div class="note admonition" id="consultationpreparation">
+<p class="admonition-title">jolux:ConsultationPreparation</p>
+<p>The owl:Class <strong>jolux:ConsultationPreparation</strong> is used for the preparation of a consultation. It contains mainly some metadata. It is not always present for every consultation.</p>
+</div>
+<div class="note admonition" id="consultationphase">
+<p class="admonition-title">jolux:ConsultationPhase</p>
+<p>The owl:Class <strong>jolux:ConsultationPhase</strong> is used to form the actual object of the consultation.</p>
+</div>
+<p>The following figure shows the structure of the jolux:ConsultationPhase:</p>
+<figure class="align-default" id="fig-consultation-phase">
+<img alt="_images/consultation_phase.png" src="_images/consultation_phase.png" />
+<figcaption>
+<p><span class="caption-text">Structure of a jolux:ConsultationPhase. There are multiple documents of type jolux:DraftRelatedDocument.</span><a class="headerlink" href="#fig-consultation-phase" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The most important properties for a jolux:ConsultationPhase are:</p>
+<ul class="simple">
+<li><p>jolux:opinionIsAboutDraftDocument</p></li>
+<li><p>jolux:opinionHasDraftRelatedDocument</p></li>
+</ul>
+<div class="note admonition" id="opinionisaboutdraftdocument">
+<p class="admonition-title">jolux:opinionIsAboutDraftDocument</p>
+<p>The property <strong>jolux:opinionIsAboutDraftDocument</strong> is used to connect the actual consultation document to the jolux:ConsultationPhase.</p>
+</div>
+<div class="note admonition" id="opinionhasdraftrelateddocument">
+<p class="admonition-title">jolux:opinionHasDraftRelatedDocument</p>
+<p>The property <strong>jolux:opinionHasDraftRelatedDocument</strong> is used to connect the accompanying documents to the different jolux:ConsultationTask (e.g. jolux:ConsultationPhase).</p>
+</div>
+<p>All the jolux:DraftRelatedDocument from the jolux:ConsultationPhase have a jolux:draftProcessDocumentType that has the supercategory <a class="reference external" href="https://fedlex.data.admin.ch/vocabulary/draft-document-type/10">https://fedlex.data.admin.ch/vocabulary/draft-document-type/10</a></p>
+<p>The most important documents of the jolux:ConsultationPhase have the following entries from the <a class="reference internal" href="vocabularies.html#id4"><span class="std std-ref">draft document types vocabulary</span></a>:</p>
+<ul class="simple">
+<li><p>the actual draft document: <a class="reference external" href="https://fedlex.data.admin.ch/vocabulary/draft-document-type/11">https://fedlex.data.admin.ch/vocabulary/draft-document-type/11</a></p></li>
+<li><p>the explanatory report: <a class="reference external" href="https://fedlex.data.admin.ch/vocabulary/draft-document-type/12">https://fedlex.data.admin.ch/vocabulary/draft-document-type/12</a></p></li>
+<li><p>The recipients list: <a class="reference external" href="https://fedlex.data.admin.ch/vocabulary/draft-document-type/14">https://fedlex.data.admin.ch/vocabulary/draft-document-type/14</a></p></li>
+</ul>
+<div class="note admonition" id="positionstatementpublication">
+<p class="admonition-title">jolux:PositionStatementPublication</p>
+<p>The owl:Class <strong>jolux:PositionStatementPublication</strong> is used to publish the complete collected position statements of the consultation recipients.</p>
+</div>
+<p>All the jolux:DraftRelatedDocument from the jolux:PositionStatementPublication have a jolux:draftProcessDocumentType that has the supercategory <a class="reference external" href="https://fedlex.data.admin.ch/vocabulary/draft-document-type/20">https://fedlex.data.admin.ch/vocabulary/draft-document-type/20</a></p>
+<p>The most important document of the jolux:PositionStatementPublication has the following entry from the <a class="reference internal" href="vocabularies.html#id4"><span class="std std-ref">draft document types vocabulary</span></a>:</p>
+<ul class="simple">
+<li><p>the complete collected opinions from the consultation recipients: <a class="reference external" href="https://fedlex.data.admin.ch/vocabulary/draft-document-type/21">https://fedlex.data.admin.ch/vocabulary/draft-document-type/21</a></p></li>
+</ul>
+<div class="note admonition" id="resultofaconsultationpublication">
+<p class="admonition-title">jolux:ResultOfAConsultationPublication</p>
+<p>The owl:Class <strong>jolux:ResultOfAConsultationPublication</strong> is used to publish the result of a consultation in form of a report of the consultation publishing authority.</p>
+</div>
+<p>All the jolux:DraftRelatedDocument from the jolux:ResultOfAConsultationPublication have a jolux:draftProcessDocumentType that has the supercategory <a class="reference external" href="https://fedlex.data.admin.ch/vocabulary/draft-document-type/30">https://fedlex.data.admin.ch/vocabulary/draft-document-type/30</a></p>
+<p>The most important document of the jolux:ResultOfAConsultationPublication has the following entry from the <a class="reference internal" href="vocabularies.html#id4"><span class="std std-ref">draft document types vocabulary</span></a>:</p>
+<ul class="simple">
+<li><p>the results report: <a class="reference external" href="https://fedlex.data.admin.ch/vocabulary/draft-document-type/31">https://fedlex.data.admin.ch/vocabulary/draft-document-type/31</a></p></li>
+</ul>
+</section>
+<section id="datatype-properties">
+<h2>Datatype Properties<a class="headerlink" href="#datatype-properties" title="Link to this heading">#</a></h2>
+<section id="jolux-consultation">
+<h3>jolux:Consultation<a class="headerlink" href="#jolux-consultation" title="Link to this heading">#</a></h3>
+<p>The <a class="reference external" href="https://fedlex.data.admin.ch/de-CH/sparql#query=PREFIX+jolux%3A+%3Chttp%3A%2F%2Fdata.legilux.public.lu%2Fresource%2Fontology%2Fjolux%23%3E%0ASELECT+DISTINCT+%3Fp+WHERE+%7B%0A%0A%09%3Fcon+a+jolux%3AConsultation%3B%0A++++++%3Fp+%3Fo.%0A++%0A++FILTER(isLiteral(%3Fo))%0A%7D&amp;amp;contentTypeConstruct=text%2Fturtle&amp;amp;contentTypeSelect=application%2Fsparql-results%2Bjson&amp;amp;endpoint=%2Fsparqlendpoint&amp;amp;requestMethod=POST&amp;amp;tabTitle=Query&amp;amp;headers=%7B%7D&amp;amp;outputFormat=table">following SPARQL query</a> shows all different datatype properties for jolux:Consultation. These properties are self explanatory.</p>
+</section>
+<section id="jolux-consultationtask">
+<h3>jolux:ConsultationTask<a class="headerlink" href="#jolux-consultationtask" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="dates.html#eventenddate"><span class="std std-ref">jolux:eventEndDate</span></a></p></li>
+<li><p><a class="reference internal" href="dates.html#eventstartdate"><span class="std std-ref">jolux:eventStartDate</span></a></p></li>
+</ul>
+</section>
+</section>
+<section id="object-properties">
+<h2>Object Properties<a class="headerlink" href="#object-properties" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>jolux:Consultation<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Object properties that point to a vocabulary entry:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="vocabularies.html#id2"><span class="std std-ref">jolux:consultationStatus</span></a></p></li>
+<li><p><a class="reference internal" href="vocabularies.html#id8"><span class="std std-ref">jolux:isOpinionOf</span></a></p></li>
+</ul>
+<p>Object properties that point to an individual:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#foreseenimpacttolegalresource"><span class="std std-ref">jolux:foreseenImpactToLegalResource</span></a></p></li>
+<li><p><a class="reference internal" href="#hassubtask"><span class="std std-ref">jolux:hasSubTask</span></a></p></li>
+</ul>
+</section>
+<section id="id2">
+<h3>jolux:ConsultationTask<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>Object properties that point to a vocabulary entry:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="vocabularies.html#id8"><span class="std std-ref">jolux:institutionInChargeOfTheEvent</span></a></p></li>
+<li><p><a class="reference internal" href="vocabularies.html#id8"><span class="std std-ref">jolux:institutionInChargeOfTheEventLevel2</span></a></p></li>
+</ul>
+<p>Object properties that point to an individual:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#opinionhasdraftrelateddocument"><span class="std std-ref">jolux:opinionHasDraftRelatedDocument</span></a></p></li>
+<li><p><a class="reference internal" href="#opinionisaboutdraftdocument"><span class="std std-ref">jolux:opinionIsAboutDraftDocument</span></a></p></li>
+</ul>
+</section>
+</section>
+<section id="sparql-examples">
+<h2>SPARQL Examples<a class="headerlink" href="#sparql-examples" title="Link to this heading">#</a></h2>
+<p>The following SPARQL query shows all the jolux:Consultation with their title in French that have a foreseen impact to the federal constitution:</p>
+<div class="highlight-sparql notranslate"><div class="highlight"><pre><span></span><span class="k">PREFIX</span> <span class="nn">jolux</span><span class="p">:</span> <span class="nl">&lt;http://data.legilux.public.lu/resource/ontology/jolux#&gt;</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">WHERE</span> <span class="p">{</span>
+
+    <span class="nv">?consultation</span> <span class="k">a</span> <span class="nn">jolux</span><span class="p">:</span><span class="nt">Consultation</span><span class="p">;</span>
+        <span class="nn">jolux</span><span class="p">:</span><span class="nt">foreseenImpactToLegalResource</span> <span class="nl">&lt;https://fedlex.data.admin.ch/eli/cc/1999/404&gt;</span><span class="p">;</span>
+        <span class="nn">jolux</span><span class="p">:</span><span class="nt">eventTitle</span> <span class="nv">?title</span><span class="p">.</span>
+  
+    <span class="k">FILTER</span><span class="p">(</span><span class="nf">lang</span><span class="p">(</span><span class="nv">?title</span><span class="p">)</span> <span class="o">=</span> <span class="s">&quot;fr&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The following SPARQL query shows all the planned consultations and the one that are in preparation with their title in German:</p>
+<div class="highlight-sparql notranslate"><div class="highlight"><pre><span></span><span class="k">PREFIX</span> <span class="nn">jolux</span><span class="p">:</span> <span class="nl">&lt;http://data.legilux.public.lu/resource/ontology/jolux#&gt;</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">WHERE</span> <span class="p">{</span>
+
+	<span class="nv">?consultation</span> <span class="k">a</span> <span class="nn">jolux</span><span class="p">:</span><span class="nt">Consultation</span><span class="p">;</span>
+        <span class="nn">jolux</span><span class="p">:</span><span class="nt">eventTitle</span> <span class="nv">?title</span><span class="p">;</span>
+        <span class="nn">jolux</span><span class="p">:</span><span class="nt">consultationStatus</span> <span class="nv">?status</span><span class="p">.</span>
+  
+  <span class="k">VALUES</span> <span class="nv">?status</span> <span class="p">{</span>
+    <span class="nl">&lt;https://fedlex.data.admin.ch/vocabulary/consultation-status/0&gt;</span>
+    <span class="nl">&lt;https://fedlex.data.admin.ch/vocabulary/consultation-status/1&gt;</span>
+  <span class="p">}</span>
+   
+  <span class="k">FILTER</span><span class="p">(</span><span class="nf">lang</span><span class="p">(</span><span class="nv">?title</span><span class="p">)</span> <span class="o">=</span> <span class="s">&quot;de&quot;</span><span class="p">)</span>
+  <span class="p">}</span>
+</pre></div>
+</div>
+<p>The following SPARQL query gives the links to the Italian result reports of the 10 last closed consultations.</p>
+<div class="highlight-sparql notranslate"><div class="highlight"><pre><span></span><span class="k">PREFIX</span> <span class="nn">jolux</span><span class="p">:</span> <span class="nl">&lt;http://data.legilux.public.lu/resource/ontology/jolux#&gt;</span>
+<span class="k">SELECT</span> <span class="nv">?title</span> <span class="nv">?date</span> <span class="nv">?url</span> <span class="k">WHERE</span> <span class="p">{</span>
+
+	<span class="nv">?consultation</span> <span class="k">a</span> <span class="nn">jolux</span><span class="p">:</span><span class="nt">Consultation</span><span class="p">;</span>
+        <span class="nn">jolux</span><span class="p">:</span><span class="nt">eventTitle</span> <span class="nv">?title</span><span class="p">;</span>
+        <span class="nn">jolux</span><span class="p">:</span><span class="nt">hasSubTask</span> <span class="nv">?result_phase</span><span class="p">,</span> <span class="nv">?consultation_phase</span><span class="p">.</span>
+  
+    <span class="k">FILTER</span><span class="p">(</span><span class="nf">lang</span><span class="p">(</span><span class="nv">?title</span><span class="p">)</span> <span class="o">=</span> <span class="s">&quot;it&quot;</span><span class="p">)</span>
+
+    <span class="nv">?result_phase</span> <span class="k">a</span> <span class="nn">jolux</span><span class="p">:</span><span class="nt">ResultOfAConsultationPublication</span><span class="p">;</span>
+        <span class="nn">jolux</span><span class="p">:</span><span class="nt">opinionHasDraftRelatedDocument</span> <span class="nv">?result</span><span class="p">.</span>
+    <span class="nv">?result</span> <span class="nn">jolux</span><span class="p">:</span><span class="nt">draftProcessDocumentType</span> <span class="nl">&lt;https://fedlex.data.admin.ch/vocabulary/draft-document-type/31&gt;</span><span class="p">;</span>
+        <span class="nn">jolux</span><span class="p">:</span><span class="nt">isRealizedBy</span> <span class="nv">?expression</span><span class="p">.</span>
+    <span class="nv">?expression</span> <span class="nn">jolux</span><span class="p">:</span><span class="nt">language</span> <span class="nl">&lt;http://publications.europa.eu/resource/authority/language/ITA&gt;</span><span class="p">;</span>
+        <span class="nn">jolux</span><span class="p">:</span><span class="nt">isEmbodiedBy</span> <span class="nv">?manifestation</span><span class="p">.</span>
+    <span class="nv">?manifestation</span> <span class="nn">jolux</span><span class="p">:</span><span class="nt">userFormat</span> <span class="nl">&lt;https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a&gt;</span><span class="p">;</span>
+        <span class="nn">jolux</span><span class="p">:</span><span class="nt">isExemplifiedBy</span> <span class="nv">?url</span><span class="p">.</span>
+    
+    <span class="nv">?consultation_phase</span> <span class="k">a</span> <span class="nn">jolux</span><span class="p">:</span><span class="nt">ConsultationPhase</span><span class="p">;</span>
+          <span class="nn">jolux</span><span class="p">:</span><span class="nt">eventEndDate</span> <span class="nv">?date</span><span class="p">.</span>
+
+<span class="p">}</span> <span class="k">ORDER BY</span> <span class="k">DESC</span><span class="p">(</span><span class="nv">?date</span><span class="p">)</span>
+<span class="k">LIMIT</span> <span class="mi">10</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="citations.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Citations</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="treaties.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">International Treaties</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uri">URI</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-structure">General Structure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datatype-properties">Datatype Properties</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jolux-consultation">jolux:Consultation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jolux-consultationtask">jolux:ConsultationTask</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#object-properties">Object Properties</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">jolux:Consultation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">jolux:ConsultationTask</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sparql-examples">SPARQL Examples</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Jean-Louis Morard, Benedikt Hitz-Gamper
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright Federal Chancellery.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
