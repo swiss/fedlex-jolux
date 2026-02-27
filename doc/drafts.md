@@ -107,3 +107,22 @@ SELECT DISTINCT ?draft ?date WHERE {
   ?task jolux:legislativeTaskType <https://fedlex.data.admin.ch/vocabulary/type-projet/1> . 
 } ORDER BY DESC(?date) LIMIT 10
 ```
+
+The following SPARQL query retrieves all drafts with their resulting legal resource and the type and date of the resulting legal resource, ordered by date of the resulting legal resource:
+
+```sparql
+PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT * WHERE {
+
+  ?draft a jolux:Draft;
+         jolux:parliamentDraftId ?CuriaId ;
+         jolux:hasResultingLegalResource ?act .
+  ?act jolux:typeDocument/skos:prefLabel ?type ;
+                         jolux:dateDocument ?date .
+      
+      FILTER(lang(?type) = "de")
+  
+} ORDER BY DESC(?date)
+```
