@@ -13,14 +13,14 @@ Throughout this sub-page, the following draft that led to a change in the [SR 19
 In the given example, the draft is about changing an already existing law, the necessary steps (independent from any JOLux modelling) included:
 
 - 21-04-12: publication of opening of the consultation process, published in the [Federal Gazette (BBl)](https://www.fedlex.admin.ch/eli/fga/2021/761)
-- execution of the consultation process, more details to this actual process are given [here](https://www.fedlex.admin.ch/de/consultation-procedures/ended/2021#https://fedlex.data.admin.ch/eli/dl/proj/2021/57/cons_1), consultation started on 21-03-31 and ended on 21-07-07
+- 21-03-31 until 21-07-07: [consultation process](https://www.fedlex.admin.ch/de/consultation-procedures/ended/2021#https://fedlex.data.admin.ch/eli/dl/proj/2021/57/cons_1)
 - 21-12-06: publication of the federal council dispatch from 21-11-24, published in the [Federal Gazette (BBl)](https://www.fedlex.admin.ch/eli/fga/2021/2805)
 - 21-12-06: publication of the draft law, published in the [Federal Gazette (BBl)](https://www.fedlex.admin.ch/eli/fga/2021/2806)
-- parliamentary process (no changes required), 22-03-10 until 22-06-17
+- 22-03-10 until 22-06-17: [parliamentary process](https://www.parlament.ch/en/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20210076) (no changes for the draft)
 - 22-06-28: publication of the changed law with decision from 22-06-17, published in the [Federal Gazette (BBl)](https://www.fedlex.admin.ch/eli/fga/2022/1564)
 - 22-10-06: expiration of the referendum period
 - 22-10-11: publication of the changed law with decision from 22-06-17 and entering into force on 22-11-01 in the [Official Compilation (OC)](https://www.fedlex.admin.ch/eli/oc/2022/572)
-- 22-11-01:publication of the changed law in the [Classified Compilation (CC)](https://www.fedlex.admin.ch/eli/cc/2007/860)
+- 22-11-01: publication of the changed law in the [Classified Compilation (CC)](https://www.fedlex.admin.ch/eli/cc/2007/860)
 
 ## URI
 
@@ -81,6 +81,11 @@ The different tasks of the draft process are connected to the draft via jolux:dr
 The object property **jolux:draftHasLegislativeTask** is used to connect a [jolux:Draft](#Draft) to the different legislative tasks that are part of the draft process.
 :::
 
+:::{admonition} Connection between the jolux:Draft and the Official Compilation (OC) and the Classified Compilation (CC)
+:class: hint
+The draft process is not directly connected (metadata wise) to the Official Compilation (OC) and the Classified Compilation (CC). This could change with a future release of the JOLux ontology.
+:::
+
 ## Datatype Properties
 
 - [jolux:parliamentDraftId](#parliamentDraftId)
@@ -92,6 +97,24 @@ Object properties that point to an individual:
 
 - [jolux:hasResultingLegalResource](#hasResultingLegalResource)
 - [jolux:draftHasLegislativeTask](#draftHasLegislativeTask)
+
+## Graph Structure of the Example
+
+The following figures show the graph structure of above example. Please note that the graph is not complete and only shows the main connections between the draft and the resulting legal resources.
+
+:::{figure-md} fig_draft_ex1
+
+<img src="img/draft_example_1.png" class="max-width-500">
+
+Graph structure of the example draft - part 1. Open image in new tab for better visibility.
+:::
+
+:::{figure-md} fig_draft_ex2
+
+<img src="img/draft_example_2.png" class="max-width-500">
+
+Graph structure of the example draft - part 2. Open image in new tab for better visibility.
+:::
 
 ## SPARQL Examples
 
