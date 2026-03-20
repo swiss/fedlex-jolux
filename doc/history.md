@@ -2,7 +2,7 @@
 
 The term **history** is used to list all legislative resources that are relevant for a specific entry in the [Classified Compilation (CC)](classified_compilation.md).
 
-There is the possibility to see all relevant events for a specific entry in the [Classified Compilation](classified_compilation.md) in the web frontend by adding `/history` to the URL of the entry. E.g. for seeing all the events for the Federal Constitution (not available in English), the URL would be `https://www.fedlex.admin.ch/eli/cc/1999/404/de/history`.
+There is the possibility to see all relevant events for a specific entry in the [Classified Compilation](classified_compilation.md) in the web frontend by adding `/history` to the URL of the entry. E.g. for seeing all the events for the federal constitution (not available in English), the URL would be `https://www.fedlex.admin.ch/eli/cc/1999/404/de/history`.
 
 There are different mechanisms how legislative resources can be relevant for the history:
 
@@ -25,7 +25,7 @@ The following figure shows the general structure of a [jolux:Draft](#Draft):
 General structure of a jolux:Draft.
 :::
 
-The following SPARQL query shows all the [jolux:Act](#Act) that werde involved in drafting the Federal Constitution:
+The following SPARQL query shows all the [jolux:Act](#Act) that werde involved in drafting the federal constitution:
 
 ```sparql
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
@@ -40,7 +40,7 @@ SELECT ?act WHERE {
 
 If new legislative resources are created that have an impact on existing ones, they are modelled as [jolux:Impact](#Impact).
 
-The following SPARQL query shows all the [jolux:Act](#Act) that have an impact on the Federal Constitution:
+The following SPARQL query shows all the [jolux:Act](#Act) that have an impact on the federal constitution:
 
 ```sparql
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>

@@ -59,7 +59,7 @@ Relation between jolux:Work, jolux:Expression und jolux:Manifestation.
 
 ## SPARQL Examples
 
-The following question uses the above introduced abstraction levels to drill down from the URI of the Federal Constitution in the [Official Compilation](official_compilation.md) to the link of the PDF document in German:
+The following question uses the above introduced abstraction levels to drill down from the URI of the federal constitution in the [Official Compilation](official_compilation.md) to the link of the PDF document in German:
 
 ```sparql
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>

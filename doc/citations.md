@@ -17,11 +17,11 @@ The following figure shows the general structure of a citation:
 General structure of a citation. The dashed lines mean either one of the outgoing connections can be set.
 :::
 
-The citations for an entry in the [Classified Compilation](classified_compilation.md) can be shown with the following URL (example for the Federal Constitution): https://www.fedlex.admin.ch/eli/cc/1999/404/de/quotes. These pages are only available in German, French, and Italian.
+The citations for an entry in the [Classified Compilation](classified_compilation.md) can be shown with the following URL (example for the federal constitution): https://www.fedlex.admin.ch/eli/cc/1999/404/de/quotes. These pages are only available in German, French, and Italian.
 
 ## From and To
 
-A citation *from* means the citing resource whereas *to* means the cited resource. So if a legislative resource cites the Federal Constitution, the citation goes *from* this resource *to* the Federal Constitution.
+A citation *from* means the citing resource whereas *to* means the cited resource. So if a legislative resource cites the federal constitution, the citation goes *from* this resource *to* the federal constitution.
 
 :::{admonition} jolux:citationFromLegalResource
 :class: note
@@ -39,7 +39,7 @@ The Citation can either go from a [jolux:Act](#Act) or a [jolux:Consolidation](#
 
 ## SPARQL Examples
 
-The following SPARQL query shows all the [jolux:ConsolidationAbstract](#ConsolidationAbstract) with its German titles that cite the Federal Constitution:
+The following SPARQL query shows all the [jolux:ConsolidationAbstract](#ConsolidationAbstract) with its German titles that cite the federal constitution:
 
 ```sparql
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
