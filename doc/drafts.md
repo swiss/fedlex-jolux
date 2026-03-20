@@ -81,9 +81,9 @@ The different tasks of the draft process are connected to the draft via jolux:dr
 The object property **jolux:draftHasLegislativeTask** is used to connect a [jolux:Draft](#Draft) to the different legislative tasks that are part of the draft process.
 :::
 
-:::{admonition} Connection between the jolux:Draft and the Official Compilation (OC) and the Classified Compilation (CC)
+:::{admonition} Connection between the jolux:Draft and the Official Compilation (OC)
 :class: hint
-The draft process is not directly connected (metadata wise) to the Official Compilation (OC) and the Classified Compilation (CC). This could change with a future release of the JOLux ontology.
+The draft process is connected (metadata wise) to the Official Compilation (OC) via a [jolux:hasResultingLegalResource](#hasResultingLegalResource) relationship.
 :::
 
 ## Datatype Properties
