@@ -6,8 +6,8 @@ This repository is used to document the JOLux ontology of the [Fedlex](https://w
 
 Please open [issues](https://github.com/swiss/fedlex-jolux/issues) on this repository or provide [pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) for contributions.
 
-> [!CAUTION]
-> 2026-02-23: This is an ongoing project between the Federal Chancellery and the [Institute for Public Sector Transformation](https://www.bfh.ch/en/research/research-areas/public-sector-transformation/) of the [Bern University of Applied Sciences](https://www.bfh.ch/en/). The content is mainly stable. Some further updates will still follow.
+> [!TIP]
+> This documentation was produced during a project between the [Official Publications Centre](https://www.bk.admin.ch/bk/en/home/bk/organisation-der-bundeskanzlei/kompetenzzentrum-amtliche-veroeffentlichungen-kav.html) of the [Federal Chancellery](https://www.bk.admin.ch/bk/en/home.html/) and the [Institute for Public Sector Transformation](https://www.bfh.ch/en/research/research-areas/public-sector-transformation/) of the [Bern University of Applied Sciences](https://www.bfh.ch/en/). The content is mainly stable.
 
 ## Maintainers Manual
 
