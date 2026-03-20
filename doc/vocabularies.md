@@ -288,13 +288,13 @@ SELECT DISTINCT * {
 } LIMIT 100
 ```
 
-## Legal Institution
+## Legal Institutions
 
-:::{admonition} Legal Institution
+:::{admonition} Legal Institutions
 :class: important
 :name: legal-institution
 - URI: https://fedlex.data.admin.ch/vocabulary/legal-institution
-- Description: The **legal institution** vocabulary is used to add the responsibility of an institution for [jolux:Act](#Act).
+- Description: The **legal institutions** vocabulary is used to add the responsibility of an institution for [jolux:Act](#Act).
 - Predicates: jolux:responsibilityOf, jolux:isOpinionOf, jolux:jolux:institutionInChargeOfTheEvent, jolux:institutionInChargeOfTheEventLevel2
 - [Metadata viewer](https://fedlex.data.admin.ch/en-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Flegal-institution)
 :::
@@ -434,7 +434,7 @@ SELECT DISTINCT ?term ?label WHERE {
 :class: important
 :name: resource-family
 - URI: https://fedlex.data.admin.ch/vocabulary/resource-family
-- Description: The **resource family*** vocabulary is used to classify the type of a jolux:Act.
+- Description: The **resource family** vocabulary is used to classify the type of a jolux:Act.
 - Predicates: jolux:legalResourceFamilyType
 - [Metadata viewer](https://fedlex.data.admin.ch/en-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Fresource-family)
 :::
