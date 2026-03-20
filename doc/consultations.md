@@ -38,7 +38,7 @@ A jolux:Consultation has a foreseen impact to a legislative resource. This is gi
 The object property **jolux:foreseenImpactToLegalResource** is used to connect a [jolux:Consultation](#Consultation) to a [jolux:Work](#Work) (usually a [jolux:ConsolidationAbstract](#ConsolidationAbstract)).
 :::
 
-The jolux:Consultation is structured into different jolux:ConsultationTask that are connected to the jolux:Consultation with the object property jolux:hasSubTask:
+The jolux:Consultation is structured into different jolux:ConsultationTask that are connected to the [jolux:Consultation](#Consultation) with the object property [jolux:hasSubTask](#hasSubTask):
 
 :::{admonition} jolux:ConsultationTask
 :class: note
@@ -80,7 +80,7 @@ The owl:Class **jolux:ConsultationPreparation** is used for the preparation of a
 The owl:Class **jolux:ConsultationPhase** is used to form the actual object of the consultation.
 :::
 
-The following figure shows the structure of the jolux:ConsultationPhase:
+The following figure shows the structure of the [jolux:ConsultationPhase](#ConsultationPhase):
 
 :::{figure-md} fig_consultation_phase
 
@@ -106,9 +106,9 @@ The property **jolux:opinionIsAboutDraftDocument** is used to connect the actual
 The property **jolux:opinionHasDraftRelatedDocument** is used to connect the accompanying documents to the different jolux:ConsultationTask (e.g. jolux:ConsultationPhase).
 :::
 
-All the jolux:DraftRelatedDocument from the jolux:ConsultationPhase have a jolux:draftProcessDocumentType that has the supercategory https://fedlex.data.admin.ch/vocabulary/draft-document-type/10
+All the [jolux:DraftRelatedDocument](#DraftRelatedDocument) from the [jolux:ConsultationPhase](#ConsultationPhase) have a [jolux:draftProcessDocumentType](#draftProcessDocumentType) that has the supercategory https://fedlex.data.admin.ch/vocabulary/draft-document-type/10
 
-The most important documents of the jolux:ConsultationPhase have the following entries from the [draft document types vocabulary](#draft-document-types):
+The most important documents of the [jolux:ConsultationPhase](#ConsultationPhase) have the following entries from the [draft document types vocabulary](#draft-document-types):
 
 - the actual draft document: https://fedlex.data.admin.ch/vocabulary/draft-document-type/11
 - the explanatory report: https://fedlex.data.admin.ch/vocabulary/draft-document-type/12
@@ -120,9 +120,9 @@ The most important documents of the jolux:ConsultationPhase have the following e
 The owl:Class **jolux:PositionStatementPublication** is used to publish the complete collected position statements of the consultation recipients.
 :::
 
-All the jolux:DraftRelatedDocument from the jolux:PositionStatementPublication have a jolux:draftProcessDocumentType that has the supercategory https://fedlex.data.admin.ch/vocabulary/draft-document-type/20
+All the [jolux:DraftRelatedDocument](#DraftRelatedDocument) from the [jolux:PositionStatementPublication](#PositionStatementPublication) have a [jolux:draftProcessDocumentType](#draftProcessDocumentType) that has the supercategory https://fedlex.data.admin.ch/vocabulary/draft-document-type/20
 
-The most important document of the jolux:PositionStatementPublication has the following entry from the [draft document types vocabulary](#draft-document-types):
+The most important document of the [jolux:PositionStatementPublication](#PositionStatementPublication) has the following entry from the [draft document types vocabulary](#draft-document-types):
 
 - the complete collected opinions from the consultation recipients: https://fedlex.data.admin.ch/vocabulary/draft-document-type/21
 
@@ -132,9 +132,9 @@ The most important document of the jolux:PositionStatementPublication has the fo
 The owl:Class **jolux:ResultOfAConsultationPublication** is used to publish the result of a consultation in form of a report of the consultation publishing authority.
 :::
 
-All the jolux:DraftRelatedDocument from the jolux:ResultOfAConsultationPublication have a jolux:draftProcessDocumentType that has the supercategory https://fedlex.data.admin.ch/vocabulary/draft-document-type/30
+All the [jolux:DraftRelatedDocument](#DraftRelatedDocument) from the [jolux:ResultOfAConsultationPublication](#ResultOfAConsultationPublication) have a [jolux:draftProcessDocumentType](#draftProcessDocumentType) that has the supercategory https://fedlex.data.admin.ch/vocabulary/draft-document-type/30
 
-The most important document of the jolux:ResultOfAConsultationPublication has the following entry from the [draft document types vocabulary](#draft-document-types):
+The most important document of the [jolux:ResultOfAConsultationPublication](#ResultOfAConsultationPublication) has the following entry from the [draft document types vocabulary](#draft-document-types):
 
 - the results report: https://fedlex.data.admin.ch/vocabulary/draft-document-type/31
 
@@ -177,7 +177,7 @@ Object properties that point to an individual:
 
 ## SPARQL Examples
 
-The following SPARQL query shows all the jolux:Consultation with their title in French that have a foreseen impact to the federal constitution:
+The following SPARQL query shows all the [jolux:Consultation](#Consultation) with their title in French that have a foreseen impact to the federal constitution:
 
 ```sparql
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>

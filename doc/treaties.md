@@ -100,7 +100,7 @@ The jolux:TreatyDocument is linked via jolux:treatyProcessHasResultingTreatyDocu
 :::{admonition} jolux:treatyProcessHasResultingTreatyDocument
 :class: note
 :name: treatyProcessHasResultingTreatyDocument
-The object property **jolux:treatyProcessHasResultingTreatyDocument** links a jolux:TreatyProcess to a jolux:TreatyDocument.
+The object property **jolux:treatyProcessHasResultingTreatyDocument** links a [jolux:TreatyProcess](#TreatyProcess) to a [jolux:TreatyDocument](#TreatyDocument).
 :::
 
 If there is an approbation into the [Official Compilation](official_compilation.md) The approbation act is linked to the treaty process via jolux:approbationAct.
@@ -108,7 +108,7 @@ If there is an approbation into the [Official Compilation](official_compilation.
 :::{admonition} jolux:approbationAct
 :class: note
 :name: approbationAct
-The object property **jolux:approbationAct** links a jolux:TreatyProcess to a jolux:Act in the [Official Compilation](official_compilation.md).
+The object property **jolux:approbationAct** links a [jolux:TreatyProcess](#TreatyProcess) to a [jolux:Act](#Act) in the [Official Compilation](official_compilation.md).
 :::
 
 ## Datatype Properties for jolux:TreatyProcess

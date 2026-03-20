@@ -10,7 +10,7 @@ The class **jolux:LegalResourceSubdivision** is used to structure each legislati
 
 ## Example
 
-Throughout this sub-page, the following jolux:LegalResourceSubdivision is used as an example.
+Throughout this sub-page, the following [jolux:LegalResourceSubdivision](#LegalResourceSubdivision) is used as an example.
 
 - URI: https://fedlex.data.admin.ch/eli/cc/1999/404/text
 - URL: No URL available for jolux:LegalResourceSubdivision
@@ -18,35 +18,35 @@ Throughout this sub-page, the following jolux:LegalResourceSubdivision is used a
 
 ## URI
 
-The URI of a jolux:LegalResourceSubdivision contains the following parts:
+The URI of a [jolux:LegalResourceSubdivision](#LegalResourceSubdivision) contains the following parts:
 
 - it starts with the URI of the entry in the Official or Consolidated Compilation
 - `/type` denotes the type of the subdivision
 
 ## General Structure
 
-The following figure shows the general structure of a jolux:LegalResourceSubdivision:
+The following figure shows the general structure of a [jolux:LegalResourceSubdivision](#LegalResourceSubdivision):
 
 :::{figure-md} subdivision
 
 <img src="img/subdivision.png" class="max-width-600">
 
-General structure of a jolux:LegalResourceSubdivision.
+General structure of a [jolux:LegalResourceSubdivision](#LegalResourceSubdivision).
 :::
 
-The jolux:LegalResourceSubdivision is bound to a jolux:Work through jolux:legalResourceSubdivisionIsPartOf.
+The [jolux:LegalResourceSubdivision](#LegalResourceSubdivision) is bound to a [jolux:Work](#Work) through [jolux:legalResourceSubdivisionIsPartOf](#legalResourceSubdivisionIsPartOf).
 
 :::{admonition} jolux:legalResourceSubdivisionIsPartOf
 :class: note
 :name: legalResourceSubdivisionIsPartOf
-The property **jolux:legalResourceSubdivisionIsPartOf** is used to connect a jolux:LegalResourceSubdivision with its [jolux:Work](#Work).
+The property **jolux:legalResourceSubdivisionIsPartOf** is used to connect a [jolux:LegalResourceSubdivision](#LegalResourceSubdivision) with its [jolux:Work](#Work).
 :::
 
-The jolux:LegalResourceSubdivision have a type from the [subdivision types vocabulary](#subdivision-types).
+The [jolux:LegalResourceSubdivision](#LegalResourceSubdivision) have a type from the [subdivision types vocabulary](#subdivision-types).
 
 :::{admonition} Hint for legal laypersons
 :class: hint
-With help of jolux:LegalResourceSubdivision, it is possible to divide a legislative resource also on the level of the individual [articles](https://fedlex.data.admin.ch/de-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Fsubdivision-type%2Fart). But this is not systematically done (yet). The single articles are only modelled when it is necessary for a [jolux:LegalResourceImpact](#LegalResourceImpact) (see [SPARQL examples](#sparql-examples) below).
+With help of [jolux:LegalResourceSubdivision](#LegalResourceSubdivision), it is possible to divide a legislative resource also on the level of the individual [articles](https://fedlex.data.admin.ch/de-CH/metadata?value=https:%2F%2Ffedlex.data.admin.ch%2Fvocabulary%2Fsubdivision-type%2Fart). But this is not systematically done (yet). The single articles are only modelled when it is necessary for a [jolux:LegalResourceImpact](#LegalResourceImpact) (see [SPARQL examples](#sparql-examples) below).
 :::
 
 ## Object Properties

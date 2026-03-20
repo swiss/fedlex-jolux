@@ -8,7 +8,7 @@ This part explains all the important objects that build an entry in the Official
 :class: hint
 Entries in the Official Compilation do not represent something like a current consolidated version of a legislative resource but are some kind of "building blocks" of an actual legislative resource. Updates to a legal text are published as "deltas" to already existing texts - much like an additional commit in software development.
 
-In distinction from the Official Compilation, the current consolidated legislative resources are modelled in the [Classified Compilation](classified_compilation.md).
+In distinction from the Official Compilation, the current consolidated legislative resources are modelled in the [Classified Compilation (CC)](classified_compilation.md).
 :::
 
 ## Example
@@ -43,9 +43,9 @@ The following figure shows the general structure of an entry in the Official Com
 General structure of an entry in the Official Compilation.
 :::
 
-As the jolux:Act is a very abstract representation of a legislative resource, there is e.g. no title of the law attached to the jolux:Act because this is something language specific and therefore added to the [jolux:Expression](#Expression) of the jolux:Act.
+As the [jolux:Act](#Act) is a very abstract representation of a legislative resource, there is e.g. no title of the law attached to the [jolux:Act](#Act) because this is something language specific and therefore added to the [jolux:Expression](#Expression) of the jolux:Act.
 
-As the Official Compilation is released in a weekly bulletin, all jolux:Act are part of such a bulletin via [jolux:isPartOf](#isPartOf) and the bulletin itself is a type jolux:Memorial:
+As the Official Compilation is released in a weekly bulletin, all [jolux:Act](#Act) are part of such a bulletin via [jolux:isPartOf](#isPartOf) and the bulletin itself is a type [jolux:Memorial](#Memorial):
 
 :::{admonition} jolux:isPartOf
 :class: note

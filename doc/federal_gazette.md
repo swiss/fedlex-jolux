@@ -14,13 +14,13 @@ The abbreviation BBl is the official English abbreviation according to [Termdat]
 
 :::{admonition} Hint for legal laypersons
 :class: hint
-Federal Gazette, Official Compilation and Classified Compilation are the three main publications in the legislation process. The basic idea (greatly simplified) is the following:
+Federal Gazette (BBl), [Official Compilation (OC)](official_compilation.md) and [Classified Compilation (CC)](classified_compilation.md) are the three main publications in the legislation process. The basic idea (greatly simplified) is the following:
 
 - the Federal Gazette is used to publish the reasons for a legislative process and documents the process
-- the [Official Compilation](official_compilation.md) is the legally binding publication of all legislation in chronologically order with only the delta (changes) to already existing legislation
-- the [Classified Compilation](classified_compilation.md) is sorted by topics and contains the consolidated legislation (only the currently valid legislation)
+- the Official Compilation is the legally binding publication of all legislation in chronologically order with only the delta (changes) to already existing legislation
+- the Classified Compilation is sorted by topics and contains the consolidated legislation (only the currently valid legislation)
 
-During the legislative process, these three publications are of different importance. During development, the Federal Gazette is the most important, for entry into force, the Official Compilation (OC) and for working with the current state of the law, the Classified Compilation (CC).
+During the legislative process, these three publications are of different importance. During development, the Federal Gazette (BBl) is the most important, for entry into force, the Official Compilation (OC) and for working with the current state of the law, the Classified Compilation (CC).
 :::
 
 ## Example
@@ -50,7 +50,7 @@ Every entry in the Federal Gazette is of type jolux:Act.
 The owl:Class **jolux:Act** is used for entries in the Federal Gazette and the Official Compilation. It is of the same [abstraction level](abstraction_levels.md) as [jolux:Work](#Work) and all jolux:Act are also jolux:Work.
 :::
 
-For jolux:Act in the Federal Gazette, the additional [abstraction levels](abstraction_levels.md) jolux:Expression and jolux:Manifestation are also available for all entries in the Federal Gazette.
+For jolux:Act in the Federal Gazette, the additional [abstraction levels](abstraction_levels.md) [jolux:Expression](#Expression) and [jolux:Manifestation](#Manifestation) are also available for all entries in the Federal Gazette.
 
 The following figure shows the general structure of an entry in the Federal Gazette:
 

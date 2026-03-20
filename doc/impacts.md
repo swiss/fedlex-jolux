@@ -1,18 +1,18 @@
 # Impacts
 
-Impacts is what connect entries in the Classified Compilation and Official Compilation. The entries in the Classified Compilation are consolidations of entries in the **Official Compilation**. This means that entries in the Official Compilation usually have an impact on entries in the Classified Compilation.
+Impacts is what connect entries in the [Classified Compilation (CC)](classified_compilation.md) and [Official Compilation (OC)](official_compilation.md). The entries in the Classified Compilation are consolidations of entries in the Official Compilation. This means that entries in the Official Compilation usually have an impact on entries in the Classified Compilation.
 
 Impacts are modelled as jolux:LegalResourceImpact.
 
 :::{admonition} jolux:LegalResourceImpact
 :class: note
 :name: LegalResourceImpact
-The owl:Class **jolux:LegalResourceImpact** is used to build an entry in the Classified Compilation out of different entries in the Official Compilation. Entries in the Official Compilation have impacts on entries in in the Classified Compilation. The jolux:LegalResourceImpact has two main predicates. jolux:impactFromLegalResource points to the source of the impact and jolux:impactToLegalResource points to the impacted resource.
+The owl:Class **jolux:LegalResourceImpact** is used to build an entry in the Classified Compilation out of different entries in the Official Compilation. Entries in the Official Compilation have impacts on entries in in the Classified Compilation. The jolux:LegalResourceImpact has two main predicates. [jolux:impactFromLegalResource](#impactFromLegalResource) points to the source of the impact and [jolux:impactToLegalResource](#impactToLegalResource) points to the impacted resource.
 :::
 
 ## Example
 
-Throughout this sub-page, the following jolux:LegalResourceImpact is used as an example.
+Throughout this sub-page, the following [jolux:LegalResourceImpact](#LegalResourceImpact) is used as an example.
 
 - URI: https://fedlex.data.admin.ch/eli/oc/2015/104/legal-analysis/LegalResourceImpact/1
 - URL: No URL available for jolux:LegalResourceImpact
@@ -20,7 +20,7 @@ Throughout this sub-page, the following jolux:LegalResourceImpact is used as an 
 
 ## URI
 
-The URI of a jolux:LegalResourceImpact contains the following parts:
+The URI of a [jolux:LegalResourceImpact](#LegalResourceImpact) contains the following parts:
 
 - it starts with the URI of the entry in the Official Compilation that is the source for the impact.
 - `/legal-analysis/LegalResourceImpact/` denotes all impacts
@@ -28,7 +28,7 @@ The URI of a jolux:LegalResourceImpact contains the following parts:
 
 ## General Structure
 
-The following figure shows the connection between entries in the Official Compilation and Classified Compilation trough jolux:LegalResourceImpact:
+The following figure shows the connection between entries in the Official Compilation and Classified Compilation trough [jolux:LegalResourceImpact](#LegalResourceImpact):
 
 :::{figure-md} impact
 
@@ -37,24 +37,24 @@ The following figure shows the connection between entries in the Official Compil
 Connection between entries in the Official Compilation and the Classified Compilation through impacts.
 :::
 
-As it is shown in the figure above, the connection between jolux:LegalResourceImpact and the entries in the Official Compilation and Classified Compilation is not direct but through [jolux:LegalResourceSubdivision](#LegalResourceSubdivision). The predicates used to connect the source and the target of the impact are jolux:impactFromLegalResource and jolux:impactToLegalResource.
+As it is shown in the figure above, the connection between [jolux:LegalResourceImpact](#LegalResourceImpact) and the entries in the Official Compilation and Classified Compilation is not direct but through [jolux:LegalResourceSubdivision](#LegalResourceSubdivision). The predicates used to connect the source and the target of the impact are [jolux:impactFromLegalResource](#impactFromLegalResource) and [jolux:impactToLegalResource](#impactToLegalResource).
 
 :::{admonition} jolux:impactFromLegalResource
 :class: note
 :name: impactFromLegalResource
-The object predicate **jolux:impactFromLegalResource** is used to connect a jolux:LegalResourceImpact to a [jolux:LegalResourceSubdivision](#LegalResourceSubdivision) as a source of the impact.
+The object predicate **jolux:impactFromLegalResource** is used to connect a [jolux:LegalResourceImpact](#LegalResourceImpact) to a [jolux:LegalResourceSubdivision](#LegalResourceSubdivision) as a source of the impact.
 :::
 
 :::{admonition} jolux:impactToLegalResource
 :class: note
 :name: impactToLegalResource
-The object predicate **jolux:impactToLegalResource** is used to connect a jolux:LegalResourceImpact to a [jolux:LegalResourceSubdivision](#LegalResourceSubdivision) as a target of the impact. The difference to jolux:impactConsolidatedBy is that the target here is the jolux:ConsolidationAbstract.
+The object predicate **jolux:impactToLegalResource** is used to connect a [jolux:LegalResourceImpact](#LegalResourceImpact) to a [jolux:LegalResourceSubdivision](#LegalResourceSubdivision) as a target of the impact. The difference to [jolux:impactConsolidatedBy](#impactConsolidatedBy) is that the target here is the [jolux:ConsolidationAbstract](#ConsolidationAbstract).
 :::
 
 :::{admonition} jolux:impactConsolidatedBy
 :class: note
 :name: impactConsolidatedBy
-The object predicate **jolux:impactConsolidatedBy** is used to connect a jolux:LegalResourceImpact to a [jolux:LegalResourceSubdivision](#LegalResourceSubdivision) that is part of the corresponding [jolux:Consolidation](#Consolidation). The difference to jolux:impactToLegalResource is that the target here is the jolux:Consolidation and not the jolux:ConsolidationAbstract.
+The object predicate **jolux:impactConsolidatedBy** is used to connect a [jolux:LegalResourceImpact](#LegalResourceImpact) to a [jolux:LegalResourceSubdivision](#LegalResourceSubdivision) that is part of the corresponding [jolux:Consolidation](#Consolidation). The difference to [jolux:impactToLegalResource](#impactToLegalResource) is that the target here is the [jolux:Consolidation](#Consolidation) and not the [jolux:ConsolidationAbstract](#ConsolidationAbstract).
 :::
 
 ## Datatype Properties

@@ -1,6 +1,6 @@
 # Classified Compilation (CC)
 
-The *Classified Compilation (CC)* (also known as Systematic Compilation) is according to the [lexicon of parliamentary terms](https://www.parlament.ch/en/%C3%BCber-das-parlament/parlamentsw%C3%B6rterbuch/parlamentsw%C3%B6rterbuch-detail?WordId=216) a regularly updated and revised collection of the legislative resources of the Official Compilation arranged under subject headings.
+The *Classified Compilation (CC)* (also known as Systematic Compilation) is according to the [lexicon of parliamentary terms](https://www.parlament.ch/en/%C3%BCber-das-parlament/parlamentsw%C3%B6rterbuch/parlamentsw%C3%B6rterbuch-detail?WordId=216) a regularly updated and revised collection of the legislative resources of the [Official Compilation (OC)](official_compilation.md) arranged under subject headings.
 
 An important aspect of the Classified Compilation is the classification of the entries according to a legal taxonomy. A deeper explanation of the Classified Compilation is also available in [German](https://www.fedlex.admin.ch/de/cc/explanations-cc)/[French](https://www.fedlex.admin.ch/fr/cc/explanations-cc)/[Italian](https://www.fedlex.admin.ch/it/cc/explanations-cc).
 
@@ -8,7 +8,7 @@ This part explains all the important objects that build an entry in the Classifi
 
 :::{admonition} Hint for legal laypersons
 :class: hint
-Entries in the Classified Compilation are consolidations of entries in the Official Compilation. The main reason for having a Classified Compilation is a better usability of the legislative resources because the Classified Compilation represents the current state of a legislative resource.
+Entries in the Classified Compilation (CC) are consolidations of entries in the Official Compilation (OC). The main reason for having a Classified Compilation is a better usability of the legislative resources because the Classified Compilation represents the current state of a legislative resource.
 
 It is important to realize that the Classified Compilation is not legally binding, the source of the "true law" is always the [Official Compilation](official_compilation.md).
 :::
@@ -44,19 +44,19 @@ The owl:Class **jolux:ConsolidationAbstract** is used for entries in the Classif
 It is a consolidation because it consolidates different entries from the Official Compilation into a single document that shows the current state. The term *abstract* is not so much meant as a summary but as an abstraction.
 :::
 
-A jolux:ConsolidationAbstract has a jolux:Expression attached for representing the title and abbreviation in different languages of this consolidation because this does not change. But there are no jolux:Manifestation these only exist for jolux:Consolidation.
+A jolux:ConsolidationAbstract has a [jolux:Expression](#Expression) attached for representing the title and abbreviation in different languages of this consolidation because this does not change. But there are no [jolux:Manifestation](#Manifestation) these only exist for [jolux:Consolidation](#Consolidation).
 
 :::{admonition} jolux:Consolidation
 :class: note
 :name: Consolidation
-The owl:Class **jolux:Consolidation** is used for versions that represent a jolux:ConsolidationAbstract at a specific time. It is of the same [abstraction level](abstraction_levels.md) as [jolux:Work](#Work) and all jolux:Consolidation are also jolux:Work.
+The owl:Class **jolux:Consolidation** is used for versions that represent a [jolux:ConsolidationAbstract](#ConsolidationAbstract) at a specific time. It is of the same [abstraction level](abstraction_levels.md) as [jolux:Work](#Work) and all jolux:Consolidation are also jolux:Work.
 
 The different jolux:Consolidation are no "deltas" of the changes but always the complete state a the specific point in time.
 :::
 
-For jolux:Consolidation, the additional [abstraction levels](abstraction_levels.md) jolux:Expression and jolux:Manifestation are usually also available for all entries. This excludes some older ones and those that are not yet published.
+For [jolux:Consolidation](#Consolidation), the additional [abstraction levels](abstraction_levels.md) [jolux:Expression](#Expression) and [jolux:Manifestation](#Manifestation) are usually also available for all entries. This excludes some older ones and those that are not yet published.
 
-The connection between jolux:Consolidation and jolux:ConsolidationAbstract is made with jolux:isMemberOf.
+The connection between [jolux:Consolidation](#Consolidation) and [jolux:ConsolidationAbstract](#ConsolidationAbstract) is made with [jolux:isMemberOf](#isMemberOf).
 
 :::{admonition} jolux:isMemberOf
 :class: note
@@ -64,7 +64,7 @@ The connection between jolux:Consolidation and jolux:ConsolidationAbstract is ma
 The object property **jolux:isMemberOf** is used to connect a [jolux:Consolidation](#Consolidation) to a [jolux:ConsolidationAbstract](#ConsolidationAbstract). It is also used to connect the weekly bulletins of the Official Compilation to the yearly collection.
 :::
 
-Each jolux:ConsolidationAbstract is based on an jolux:Act through jolux:basicAct.
+Each jolux:ConsolidationAbstract is based on an [jolux:Act](#Act) through [jolux:basicAct](#basicAct).
 
 :::{admonition} jolux:basicAct
 :class: note
@@ -133,7 +133,7 @@ SELECT * WHERE {
 }
 ```
 
-The following SPARQL query gives the PDF link to the latest version of the constitution in English through a chain to jolux:Consolidation, jolux:Expression and jolux:Manifestation:
+The following SPARQL query gives the PDF link to the latest version of the constitution in English through a chain to [jolux:Consolidation](#Consolidation), [jolux:Expression](#Expression) and [jolux:Manifestation](#Manifestation):
 
 ```sparql
 PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
